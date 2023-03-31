@@ -12,7 +12,10 @@ function FiltrarDados() {
     let cdefg = lerArquivoJson(path.join(cacheDir, "cdefg.json"))
 
     abc = filtrarObjeto(abc)
-/*     cdefg = filtrarObjeto(cdefg) */
+    cdefg = filtrarObjeto(cdefg)
+
+    gravarArquivoJson(path.join(cacheDir, "abc_filtrado.json"), abc)
+    gravarArquivoJson(path.join(cacheDir, "cdefg_filtrado.json"), cdefg)
 
 }
 
@@ -46,7 +49,7 @@ function filtrarObjeto(array_de_objetos) {
 
     })
 
-
+    return array_de_objetos
 
 }
 
@@ -55,8 +58,16 @@ function filtrarObjeto(array_de_objetos) {
 function classificarMensagens(cliente) {
 
     let conexao = cliente.status
-    let tempoParaEntrarEmBloqueio = Number(cliente.tempoParaEntrarEmBloqueio)
-    let diasEmAtraso = Number(cliente.diasEmAtraso)
+
+    let tempoParaEntrarEmBloqueio
+
+    if (isNaN(Number(cliente.tempoParaEntrarEmBloqueio))) {
+        tempoParaEntrarEmBloqueio = cliente.tempoParaEntrarEmBloqueio
+    } else {
+        tempoParaEntrarEmBloqueio = Number(cliente.tempoParaEntrarEmBloqueio)
+    }
+
+    let diasEmAtraso = Number(cliente.tempo_em_atraso)
     let bloqueiaCom = Number(cliente.bloqueia_com)
     let valorAberto = cliente.valor
 
@@ -85,11 +96,15 @@ function classificarMensagens(cliente) {
 
 
 
+function gravarArquivoJson(caminho, arquivo) {
 
+    const dados = JSON.stringify(arquivo)
+
+    fs.writeFileSync(caminho, dados)
+
+}
 
 function lerArquivoJson(caminho) {
-
-    log(caminho)
 
     const dados = JSON.parse(fs.readFileSync(caminho))
 
@@ -160,6 +175,8 @@ function calcularDatadoBloqueio(vencimento, dias_para_bloquear) {
 
 function mudarValor(valor) {
 
+    if (!valor){return false}
+
     const novoValor = valor.replace(".", ",")
 
     return novoValor
@@ -178,7 +195,7 @@ function mudarConexao(conexao) {
 
 }
 
-function calcularTempoParaEntraremBloqueio(cliente){
+function calcularTempoParaEntraremBloqueio(cliente) {
 
     let diaDoBloqueio = Date.parse(converterEmDataJs(cliente.data_do_bloqueio))
 
@@ -186,7 +203,7 @@ function calcularTempoParaEntraremBloqueio(cliente){
 
         if (diaDoBloqueio - Date.now() < 0) {
 
-            if (cliente.conexao = "Bloqueado"){
+            if (cliente.conexao = "Bloqueado") {
                 return "Passou"
             } else {
                 return "Confiança"
@@ -206,13 +223,13 @@ function calcularTempoParaEntraremBloqueio(cliente){
 
 }
 
-function converterEmDataJs(dataString){
+function converterEmDataJs(dataString) {
 
     var partesDaData = dataString.split("/");
     var dia = partesDaData[0];
     var mes = partesDaData[1] - 1; // subtrai 1 do mês para ficar na faixa 0-11
     var ano = partesDaData[2];
-  
+
     // Cria um objeto de data em JavaScript com as partes da data
     var data = new Date(ano, mes, dia);
 
