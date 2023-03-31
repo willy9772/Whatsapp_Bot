@@ -1,0 +1,79 @@
+[
+    {
+        "fluxo_id": 0,
+        "nome": "principal",
+        "mensagens": [
+            "Olá! Seja muito bem vindo a GigaNet! é um prazer ter você aqui!",
+            "Para darmos continuidade ao seu atendimento, informe o número da opção desejada:",
+            "*1*- Pagamento Via PIX\n*2*- Boleto\n*3*- Falar com Atendente\n*4*- Encerrar Atendimento"
+        ],
+        "no_Reply?": false,
+        "opções": [
+            {
+                "opcao": 1,
+                "enviarMensagemID": 1
+            },
+            {
+                "opcao": 2,
+                "enviarMensagemID": 2
+            },
+            {
+                "opcao": 3,
+                "enviarMensagemID": 3
+            },
+            {
+                "opcao": 4,
+                "enviarMensagemID": 999
+            }
+        ]
+    },
+    {
+        "fluxo_id": 1,
+        "nome": "PIX",
+        "mensagens": [
+            "Acesse nosso site no link 👉*pix.gigars.com.br* e informe o CPF do contratante!",
+            "O que você deseja fazer?",
+            "*1*- Encerrar Atendimento\n*2*- Falar com Atendente\n"
+        ],
+        "no_Reply?": false,
+        "opções": [
+            {
+                "opcao": 1,
+                "enviarMensagemID": 999
+            },
+            {
+                "opcao": 2,
+                "enviarMensagemID": 3
+            }
+        ]
+    },
+    {
+        "fluxo_id": 2,
+        "nome": "Boleto",
+        "mensagens": [
+            "Acesse nosso site no link 👉*https://giganet.portal.7az.com.br/login* e informe o CPF do contratante para ver suas faturas e gerar os boletos!",
+            "O que você deseja fazer?",
+            "*1*- Encerrar Atendimento\n*2*- Falar com Atendente\n"
+        ],
+        "no_Reply?": false,
+        "opções": [
+            {
+                "opcao": 1,
+                "enviarMensagemID": 999
+            },
+            {
+                "opcao": 2,
+                "enviarMensagemID": 3
+            }
+        ]
+    },
+    {
+        "fluxo_id": 3,
+        "nome": "Falar com Atendente",
+        "mensagens": [
+            "Nos chame em nosso Whatsapp 👉 https://api.whatsapp.com/send?phone=555199902277 será um prazer lhe atender!"
+        ],
+        "opções": [],
+        "no_Reply?": true
+    }
+]
