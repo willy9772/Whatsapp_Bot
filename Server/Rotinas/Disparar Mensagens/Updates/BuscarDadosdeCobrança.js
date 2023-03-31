@@ -5,6 +5,8 @@ const { log } = require("console");
 
 module.exports = { atualizarCache }
 
+atualizarCache()
+
 async function atualizarCache(){
 	
 	const [

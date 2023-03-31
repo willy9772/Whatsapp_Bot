@@ -260,19 +260,6 @@
     "tipoDeMensagem": "PADRÃO"
   },
   {
-    "id": "1335",
-    "nome": "Joice",
-    "telefone": "51999916102",
-    "status": "Ativo",
-    "vencimento": "30/03/2023",
-    "bloqueia_com": "16",
-    "tempo_em_atraso": "1",
-    "valor": "99,90",
-    "data_do_bloqueio": "15/04/2023",
-    "tempoParaEntrarEmBloqueio": "14",
-    "tipoDeMensagem": "PADRÃO"
-  },
-  {
     "id": "1379",
     "nome": "Bruno",
     "telefone": "51996238451",
@@ -346,19 +333,6 @@
     "bloqueia_com": "16",
     "tempo_em_atraso": "1",
     "valor": "99,90",
-    "data_do_bloqueio": "15/04/2023",
-    "tempoParaEntrarEmBloqueio": "14",
-    "tipoDeMensagem": "PADRÃO"
-  },
-  {
-    "id": "1831",
-    "nome": "Fernanda",
-    "telefone": "51996621022",
-    "status": "Ativo",
-    "vencimento": "30/03/2023",
-    "bloqueia_com": "16",
-    "tempo_em_atraso": "1",
-    "valor": "75,01",
     "data_do_bloqueio": "15/04/2023",
     "tempoParaEntrarEmBloqueio": "14",
     "tipoDeMensagem": "PADRÃO"
@@ -556,19 +530,6 @@
     "valor": "79,90",
     "data_do_bloqueio": "13/04/2023",
     "tempoParaEntrarEmBloqueio": "12",
-    "tipoDeMensagem": "PADRÃO"
-  },
-  {
-    "id": "2348",
-    "nome": "Luiz",
-    "telefone": "51999695426",
-    "status": "Ativo",
-    "vencimento": "30/03/2023",
-    "bloqueia_com": "16",
-    "tempo_em_atraso": "1",
-    "valor": "149,90",
-    "data_do_bloqueio": "15/04/2023",
-    "tempoParaEntrarEmBloqueio": "14",
     "tipoDeMensagem": "PADRÃO"
   },
   {
@@ -1625,19 +1586,6 @@
     "tipoDeMensagem": "PADRÃO"
   },
   {
-    "id": "5979",
-    "nome": "Sabrina",
-    "telefone": "51998318912",
-    "status": "Ativo",
-    "vencimento": "30/03/2023",
-    "bloqueia_com": "16",
-    "tempo_em_atraso": "1",
-    "valor": "119,90",
-    "data_do_bloqueio": "15/04/2023",
-    "tempoParaEntrarEmBloqueio": "14",
-    "tipoDeMensagem": "PADRÃO"
-  },
-  {
     "id": "6004",
     "nome": "Janete",
     "telefone": "51996531700",
@@ -2561,19 +2509,6 @@
     "tipoDeMensagem": "PADRÃO"
   },
   {
-    "id": "8703",
-    "nome": "Remi",
-    "telefone": "51999671161",
-    "status": "Ativo",
-    "vencimento": "29/03/2023",
-    "bloqueia_com": "16",
-    "tempo_em_atraso": "2",
-    "valor": "129,90",
-    "data_do_bloqueio": "14/04/2023",
-    "tempoParaEntrarEmBloqueio": "13",
-    "tipoDeMensagem": "PADRÃO"
-  },
-  {
     "id": "8708",
     "nome": "Daiana",
     "telefone": "51999264267",
@@ -2764,19 +2699,6 @@
     "bloqueia_com": "16",
     "tempo_em_atraso": "1",
     "valor": "109,90",
-    "data_do_bloqueio": "15/04/2023",
-    "tempoParaEntrarEmBloqueio": "14",
-    "tipoDeMensagem": "PADRÃO"
-  },
-  {
-    "id": "9769",
-    "nome": "Patricia",
-    "telefone": "51997687164",
-    "status": "Ativo",
-    "vencimento": "30/03/2023",
-    "bloqueia_com": "16",
-    "tempo_em_atraso": "1",
-    "valor": "129,90",
     "data_do_bloqueio": "15/04/2023",
     "tempoParaEntrarEmBloqueio": "14",
     "tipoDeMensagem": "PADRÃO"
@@ -4303,19 +4225,6 @@
     "tipoDeMensagem": "PADRÃO"
   },
   {
-    "id": "15404",
-    "nome": "Remi",
-    "telefone": "51998494459",
-    "status": "Ativo",
-    "vencimento": "30/03/2023",
-    "bloqueia_com": "16",
-    "tempo_em_atraso": "1",
-    "valor": "99,90",
-    "data_do_bloqueio": "15/04/2023",
-    "tempoParaEntrarEmBloqueio": "14",
-    "tipoDeMensagem": "PADRÃO"
-  },
-  {
     "id": "15422",
     "nome": "Alessandro",
     "telefone": "51995635954",
@@ -4966,6 +4875,19 @@
     "tipoDeMensagem": "PADRÃO"
   },
   {
+    "id": "17303",
+    "nome": "Eberton",
+    "telefone": "51999001583",
+    "status": "Ativo",
+    "vencimento": "30/03/2023",
+    "bloqueia_com": "16",
+    "tempo_em_atraso": "1",
+    "valor": "109,90",
+    "data_do_bloqueio": "15/04/2023",
+    "tempoParaEntrarEmBloqueio": "14",
+    "tipoDeMensagem": "PADRÃO"
+  },
+  {
     "id": "17368",
     "nome": "Vinicius",
     "telefone": "51995182169",
@@ -5585,19 +5507,6 @@
     "bloqueia_com": "16",
     "tempo_em_atraso": "1",
     "valor": "129,90",
-    "data_do_bloqueio": "15/04/2023",
-    "tempoParaEntrarEmBloqueio": "14",
-    "tipoDeMensagem": "PADRÃO"
-  },
-  {
-    "id": "18923",
-    "nome": "Soraia",
-    "telefone": "51995391459",
-    "status": "Ativo",
-    "vencimento": "30/03/2023",
-    "bloqueia_com": "16",
-    "tempo_em_atraso": "1",
-    "valor": "109,90",
     "data_do_bloqueio": "15/04/2023",
     "tempoParaEntrarEmBloqueio": "14",
     "tipoDeMensagem": "PADRÃO"
@@ -6422,19 +6331,6 @@
     "tipoDeMensagem": "PADRÃO"
   },
   {
-    "id": "21740",
-    "nome": "Fernanda",
-    "telefone": "51992024095",
-    "status": "Ativo",
-    "vencimento": "30/03/2023",
-    "bloqueia_com": "16",
-    "tempo_em_atraso": "1",
-    "valor": "119,90",
-    "data_do_bloqueio": "15/04/2023",
-    "tempoParaEntrarEmBloqueio": "14",
-    "tipoDeMensagem": "PADRÃO"
-  },
-  {
     "id": "21881",
     "nome": "Camila",
     "telefone": "51981819246",
@@ -6963,19 +6859,6 @@
     "bloqueia_com": "16",
     "tempo_em_atraso": "1",
     "valor": "119,90",
-    "data_do_bloqueio": "15/04/2023",
-    "tempoParaEntrarEmBloqueio": "14",
-    "tipoDeMensagem": "PADRÃO"
-  },
-  {
-    "id": "23428",
-    "nome": "Paulo",
-    "telefone": "51997805052",
-    "status": "Ativo",
-    "vencimento": "30/03/2023",
-    "bloqueia_com": "16",
-    "tempo_em_atraso": "1",
-    "valor": "109,90",
     "data_do_bloqueio": "15/04/2023",
     "tempoParaEntrarEmBloqueio": "14",
     "tipoDeMensagem": "PADRÃO"
@@ -8528,6 +8411,19 @@
     "tipoDeMensagem": "PADRÃO"
   },
   {
+    "id": "30143",
+    "nome": "Carlos",
+    "telefone": "51999573075",
+    "status": "Bloqueado",
+    "vencimento": "30/03/2023",
+    "bloqueia_com": "6",
+    "tempo_em_atraso": "1",
+    "valor": "119,90",
+    "data_do_bloqueio": "05/04/2023",
+    "tempoParaEntrarEmBloqueio": "4",
+    "tipoDeMensagem": false
+  },
+  {
     "id": "35183",
     "nome": "Anderson",
     "telefone": "51985717416",
@@ -8707,19 +8603,6 @@
     "valor": "114,90",
     "data_do_bloqueio": "11/04/2023",
     "tempoParaEntrarEmBloqueio": "10",
-    "tipoDeMensagem": "PADRÃO"
-  },
-  {
-    "id": "296",
-    "nome": "Vinícius",
-    "telefone": "51997062765",
-    "status": "Ativo",
-    "vencimento": "27/03/2023",
-    "bloqueia_com": "16",
-    "tempo_em_atraso": "4",
-    "valor": "114,90",
-    "data_do_bloqueio": "12/04/2023",
-    "tempoParaEntrarEmBloqueio": "11",
     "tipoDeMensagem": "PADRÃO"
   },
   {
@@ -9308,20 +9191,6 @@
     "tipoDeMensagem": "PADRÃO"
   },
   {
-    "id": "59",
-    "nome": "Cassiano",
-    "telefone": "51996583866",
-    "status": "Bloqueado",
-    "vencimento": "15/03/2023",
-    "bloqueia_com": "16",
-    "tempo_em_atraso": "16",
-    "valor": "79,90",
-    "data_do_bloqueio": "31/03/2023",
-    "conexao": "Bloqueado",
-    "tempoParaEntrarEmBloqueio": "Passou",
-    "tipoDeMensagem": "BLOQUEADO"
-  },
-  {
     "id": "87",
     "nome": "Nelson",
     "telefone": "51998474691",
@@ -9582,20 +9451,6 @@
     "data_do_bloqueio": "10/04/2023",
     "tempoParaEntrarEmBloqueio": "9",
     "tipoDeMensagem": "PADRÃO"
-  },
-  {
-    "id": "422",
-    "nome": "Vera",
-    "telefone": "51997669589",
-    "status": "Bloqueado",
-    "vencimento": "15/03/2023",
-    "bloqueia_com": "16",
-    "tempo_em_atraso": "16",
-    "valor": "99,90",
-    "data_do_bloqueio": "31/03/2023",
-    "conexao": "Bloqueado",
-    "tempoParaEntrarEmBloqueio": "Passou",
-    "tipoDeMensagem": "BLOQUEADO"
   },
   {
     "id": "529",
@@ -9899,19 +9754,6 @@
     "tipoDeMensagem": "PADRÃO"
   },
   {
-    "id": "1137",
-    "nome": "Maristela",
-    "telefone": "51995019955",
-    "status": "Ativo",
-    "vencimento": "18/03/2023",
-    "bloqueia_com": "16",
-    "tempo_em_atraso": "13",
-    "valor": "79,90",
-    "data_do_bloqueio": "03/04/2023",
-    "tempoParaEntrarEmBloqueio": "2",
-    "tipoDeMensagem": "PADRÃO"
-  },
-  {
     "id": "1144",
     "nome": "Jose",
     "telefone": "51984236902",
@@ -10122,20 +9964,6 @@
     "tipoDeMensagem": "PADRÃO"
   },
   {
-    "id": "1802",
-    "nome": "Aline",
-    "telefone": "51995857147",
-    "status": "Ativo",
-    "vencimento": "15/03/2023",
-    "bloqueia_com": "16",
-    "tempo_em_atraso": "16",
-    "valor": "119,90",
-    "data_do_bloqueio": "31/03/2023",
-    "conexao": "Bloqueado",
-    "tempoParaEntrarEmBloqueio": "Passou",
-    "tipoDeMensagem": "PADRÃO"
-  },
-  {
     "id": "1828",
     "nome": "Adenilso",
     "telefone": "51980657986",
@@ -10277,19 +10105,6 @@
     "valor": "129,90",
     "data_do_bloqueio": "08/04/2023",
     "tempoParaEntrarEmBloqueio": "7",
-    "tipoDeMensagem": "PADRÃO"
-  },
-  {
-    "id": "2095",
-    "nome": "Marli",
-    "telefone": "51996207398",
-    "status": "Ativo",
-    "vencimento": "25/03/2023",
-    "bloqueia_com": "16",
-    "tempo_em_atraso": "6",
-    "valor": "109,90",
-    "data_do_bloqueio": "10/04/2023",
-    "tempoParaEntrarEmBloqueio": "9",
     "tipoDeMensagem": "PADRÃO"
   },
   {
@@ -10816,19 +10631,6 @@
     "tipoDeMensagem": "PADRÃO"
   },
   {
-    "id": "3054",
-    "nome": "Aline",
-    "telefone": "51999362174",
-    "status": "Ativo",
-    "vencimento": "25/03/2023",
-    "bloqueia_com": "16",
-    "tempo_em_atraso": "6",
-    "valor": "124,90",
-    "data_do_bloqueio": "10/04/2023",
-    "tempoParaEntrarEmBloqueio": "9",
-    "tipoDeMensagem": "PADRÃO"
-  },
-  {
     "id": "3064",
     "nome": "Caroline",
     "telefone": "51981084959",
@@ -11314,19 +11116,6 @@
     "tipoDeMensagem": "PADRÃO"
   },
   {
-    "id": "3785",
-    "nome": "Cleunice",
-    "telefone": "51998489012",
-    "status": "Ativo",
-    "vencimento": "17/03/2023",
-    "bloqueia_com": "16",
-    "tempo_em_atraso": "14",
-    "valor": "79,90",
-    "data_do_bloqueio": "02/04/2023",
-    "tempoParaEntrarEmBloqueio": "1",
-    "tipoDeMensagem": "BLOQUEIA AMANHÃ"
-  },
-  {
     "id": "3802",
     "nome": "Adriano",
     "telefone": "51997867615",
@@ -11348,19 +11137,6 @@
     "bloqueia_com": "16",
     "tempo_em_atraso": "11",
     "valor": "109,90",
-    "data_do_bloqueio": "05/04/2023",
-    "tempoParaEntrarEmBloqueio": "4",
-    "tipoDeMensagem": "PADRÃO"
-  },
-  {
-    "id": "3826",
-    "nome": "Raquel",
-    "telefone": "51992359928",
-    "status": "Ativo",
-    "vencimento": "20/03/2023",
-    "bloqueia_com": "16",
-    "tempo_em_atraso": "11",
-    "valor": "119,90",
     "data_do_bloqueio": "05/04/2023",
     "tempoParaEntrarEmBloqueio": "4",
     "tipoDeMensagem": "PADRÃO"
@@ -11725,7 +11501,7 @@
     "id": "4330",
     "nome": "Tais",
     "telefone": "51999671691",
-    "status": "Bloqueado",
+    "status": "Ativo",
     "vencimento": "15/03/2023",
     "bloqueia_com": "16",
     "tempo_em_atraso": "16",
@@ -11733,7 +11509,7 @@
     "data_do_bloqueio": "31/03/2023",
     "conexao": "Bloqueado",
     "tempoParaEntrarEmBloqueio": "Passou",
-    "tipoDeMensagem": "BLOQUEADO"
+    "tipoDeMensagem": "PADRÃO"
   },
   {
     "id": "4363",
@@ -11995,34 +11771,6 @@
     "valor": "119,90",
     "data_do_bloqueio": "10/04/2023",
     "tempoParaEntrarEmBloqueio": "9",
-    "tipoDeMensagem": "PADRÃO"
-  },
-  {
-    "id": "4597",
-    "nome": "Vanessa",
-    "telefone": "51997517421",
-    "status": "Bloqueado",
-    "vencimento": "25/03/2023",
-    "bloqueia_com": "6",
-    "tempo_em_atraso": "6",
-    "valor": "119,90",
-    "data_do_bloqueio": "31/03/2023",
-    "conexao": "Bloqueado",
-    "tempoParaEntrarEmBloqueio": "Passou",
-    "tipoDeMensagem": "BLOQUEADO"
-  },
-  {
-    "id": "4600",
-    "nome": "Diozefer",
-    "telefone": "51980278178",
-    "status": "Ativo",
-    "vencimento": "12/03/2023",
-    "bloqueia_com": "16",
-    "tempo_em_atraso": "19",
-    "valor": "124,90",
-    "data_do_bloqueio": "28/03/2023",
-    "conexao": "Bloqueado",
-    "tempoParaEntrarEmBloqueio": "Passou",
     "tipoDeMensagem": "PADRÃO"
   },
   {
@@ -12776,7 +12524,7 @@
     "id": "5446",
     "nome": "Elias",
     "telefone": "51998905748",
-    "status": "Bloqueado",
+    "status": "Ativo",
     "vencimento": "15/03/2023",
     "bloqueia_com": "16",
     "tempo_em_atraso": "16",
@@ -12784,7 +12532,7 @@
     "data_do_bloqueio": "31/03/2023",
     "conexao": "Bloqueado",
     "tempoParaEntrarEmBloqueio": "Passou",
-    "tipoDeMensagem": "BLOQUEADO"
+    "tipoDeMensagem": "PADRÃO"
   },
   {
     "id": "5469",
@@ -13152,19 +12900,6 @@
     "conexao": "Bloqueado",
     "tempoParaEntrarEmBloqueio": "Passou",
     "tipoDeMensagem": "BLOQUEADO"
-  },
-  {
-    "id": "6101",
-    "nome": "Patricia",
-    "telefone": "51997719426",
-    "status": "Ativo",
-    "vencimento": "25/03/2023",
-    "bloqueia_com": "16",
-    "tempo_em_atraso": "6",
-    "valor": "109,90",
-    "data_do_bloqueio": "10/04/2023",
-    "tempoParaEntrarEmBloqueio": "9",
-    "tipoDeMensagem": "PADRÃO"
   },
   {
     "id": "6149",
@@ -13537,7 +13272,7 @@
     "id": "6830",
     "nome": "Eloi",
     "telefone": "51995301539",
-    "status": "Bloqueado",
+    "status": "Ativo",
     "vencimento": "15/03/2023",
     "bloqueia_com": "16",
     "tempo_em_atraso": "16",
@@ -13545,7 +13280,7 @@
     "data_do_bloqueio": "31/03/2023",
     "conexao": "Bloqueado",
     "tempoParaEntrarEmBloqueio": "Passou",
-    "tipoDeMensagem": "BLOQUEADO"
+    "tipoDeMensagem": "PADRÃO"
   },
   {
     "id": "6834",
@@ -14125,20 +13860,6 @@
     "tipoDeMensagem": "PADRÃO"
   },
   {
-    "id": "7849",
-    "nome": "Alexsandro",
-    "telefone": "51997347951",
-    "status": "Bloqueado",
-    "vencimento": "15/03/2023",
-    "bloqueia_com": "16",
-    "tempo_em_atraso": "16",
-    "valor": "119,90",
-    "data_do_bloqueio": "31/03/2023",
-    "conexao": "Bloqueado",
-    "tempoParaEntrarEmBloqueio": "Passou",
-    "tipoDeMensagem": "BLOQUEADO"
-  },
-  {
     "id": "7877",
     "nome": "Cidalia",
     "telefone": "51998465972",
@@ -14521,20 +14242,6 @@
     "tipoDeMensagem": "PADRÃO"
   },
   {
-    "id": "8209",
-    "nome": "Sandro",
-    "telefone": "51996803031",
-    "status": "Bloqueado",
-    "vencimento": "15/03/2023",
-    "bloqueia_com": "16",
-    "tempo_em_atraso": "16",
-    "valor": "109,90",
-    "data_do_bloqueio": "31/03/2023",
-    "conexao": "Bloqueado",
-    "tempoParaEntrarEmBloqueio": "Passou",
-    "tipoDeMensagem": "BLOQUEADO"
-  },
-  {
     "id": "8235",
     "nome": "Julio",
     "telefone": "51996483626",
@@ -14666,20 +14373,6 @@
     "tipoDeMensagem": "PADRÃO"
   },
   {
-    "id": "8439",
-    "nome": "Deivid",
-    "telefone": "51997297533",
-    "status": "Bloqueado",
-    "vencimento": "15/03/2023",
-    "bloqueia_com": "16",
-    "tempo_em_atraso": "16",
-    "valor": "99,90",
-    "data_do_bloqueio": "31/03/2023",
-    "conexao": "Bloqueado",
-    "tempoParaEntrarEmBloqueio": "Passou",
-    "tipoDeMensagem": "BLOQUEADO"
-  },
-  {
     "id": "8469",
     "nome": "Marisa",
     "telefone": "51998491078",
@@ -14760,20 +14453,6 @@
     "tipoDeMensagem": "BLOQUEADO"
   },
   {
-    "id": "8529",
-    "nome": "Valdir",
-    "telefone": "51998137148",
-    "status": "Ativo",
-    "vencimento": "15/03/2023",
-    "bloqueia_com": "16",
-    "tempo_em_atraso": "16",
-    "valor": "99,90",
-    "data_do_bloqueio": "31/03/2023",
-    "conexao": "Bloqueado",
-    "tempoParaEntrarEmBloqueio": "Passou",
-    "tipoDeMensagem": "PADRÃO"
-  },
-  {
     "id": "8540",
     "nome": "Clederson",
     "telefone": "51993728829",
@@ -14823,19 +14502,6 @@
     "valor": "119,90",
     "data_do_bloqueio": "10/04/2023",
     "tempoParaEntrarEmBloqueio": "9",
-    "tipoDeMensagem": "PADRÃO"
-  },
-  {
-    "id": "8601",
-    "nome": "Chaiane",
-    "telefone": "51996884145",
-    "status": "Ativo",
-    "vencimento": "20/03/2023",
-    "bloqueia_com": "16",
-    "tempo_em_atraso": "11",
-    "valor": "109,90",
-    "data_do_bloqueio": "05/04/2023",
-    "tempoParaEntrarEmBloqueio": "4",
     "tipoDeMensagem": "PADRÃO"
   },
   {
@@ -15022,19 +14688,6 @@
     "bloqueia_com": "16",
     "tempo_em_atraso": "11",
     "valor": "109,90",
-    "data_do_bloqueio": "05/04/2023",
-    "tempoParaEntrarEmBloqueio": "4",
-    "tipoDeMensagem": "PADRÃO"
-  },
-  {
-    "id": "8890",
-    "nome": "Adair",
-    "telefone": "51998495172",
-    "status": "Ativo",
-    "vencimento": "20/03/2023",
-    "bloqueia_com": "16",
-    "tempo_em_atraso": "11",
-    "valor": "119,90",
     "data_do_bloqueio": "05/04/2023",
     "tempoParaEntrarEmBloqueio": "4",
     "tipoDeMensagem": "PADRÃO"
@@ -15669,19 +15322,6 @@
     "tipoDeMensagem": "PADRÃO"
   },
   {
-    "id": "9727",
-    "nome": "Gelson",
-    "telefone": "51996995260",
-    "status": "Ativo",
-    "vencimento": "17/03/2023",
-    "bloqueia_com": "16",
-    "tempo_em_atraso": "14",
-    "valor": "99,90",
-    "data_do_bloqueio": "02/04/2023",
-    "tempoParaEntrarEmBloqueio": "1",
-    "tipoDeMensagem": "BLOQUEIA AMANHÃ"
-  },
-  {
     "id": "9741",
     "nome": "Janaina",
     "telefone": "51982074178",
@@ -15829,19 +15469,6 @@
     "tipoDeMensagem": "PADRÃO"
   },
   {
-    "id": "9991",
-    "nome": "Mateus",
-    "telefone": "51997881858",
-    "status": "Ativo",
-    "vencimento": "17/03/2023",
-    "bloqueia_com": "16",
-    "tempo_em_atraso": "14",
-    "valor": "109,90",
-    "data_do_bloqueio": "02/04/2023",
-    "tempoParaEntrarEmBloqueio": "1",
-    "tipoDeMensagem": "BLOQUEIA AMANHÃ"
-  },
-  {
     "id": "9993",
     "nome": "Debora",
     "telefone": "51995511842",
@@ -15960,20 +15587,6 @@
     "tipoDeMensagem": "PADRÃO"
   },
   {
-    "id": "10125",
-    "nome": "Bruna",
-    "telefone": "51995183794",
-    "status": "Ativo",
-    "vencimento": "15/03/2023",
-    "bloqueia_com": "16",
-    "tempo_em_atraso": "16",
-    "valor": "109,90",
-    "data_do_bloqueio": "31/03/2023",
-    "conexao": "Bloqueado",
-    "tempoParaEntrarEmBloqueio": "Passou",
-    "tipoDeMensagem": "PADRÃO"
-  },
-  {
     "id": "10159",
     "nome": "Marilene",
     "telefone": "51998998915",
@@ -16081,20 +15694,6 @@
     "data_do_bloqueio": "05/04/2023",
     "tempoParaEntrarEmBloqueio": "4",
     "tipoDeMensagem": "PADRÃO"
-  },
-  {
-    "id": "10264",
-    "nome": "Claudete",
-    "telefone": "51998583368",
-    "status": "Bloqueado",
-    "vencimento": "15/03/2023",
-    "bloqueia_com": "16",
-    "tempo_em_atraso": "16",
-    "valor": "99,90",
-    "data_do_bloqueio": "31/03/2023",
-    "conexao": "Bloqueado",
-    "tempoParaEntrarEmBloqueio": "Passou",
-    "tipoDeMensagem": "BLOQUEADO"
   },
   {
     "id": "10277",
@@ -16229,20 +15828,6 @@
     "tipoDeMensagem": "PADRÃO"
   },
   {
-    "id": "10341",
-    "nome": "Sergio",
-    "telefone": "51998350615",
-    "status": "Bloqueado",
-    "vencimento": "15/03/2023",
-    "bloqueia_com": "16",
-    "tempo_em_atraso": "16",
-    "valor": "109,90",
-    "data_do_bloqueio": "31/03/2023",
-    "conexao": "Bloqueado",
-    "tempoParaEntrarEmBloqueio": "Passou",
-    "tipoDeMensagem": "BLOQUEADO"
-  },
-  {
     "id": "10343",
     "nome": "Taciara",
     "telefone": "51995233440",
@@ -16281,19 +15866,6 @@
     "conexao": "Bloqueado",
     "tempoParaEntrarEmBloqueio": "Passou",
     "tipoDeMensagem": "BLOQUEADO"
-  },
-  {
-    "id": "10386",
-    "nome": "Solange",
-    "telefone": "51995928526",
-    "status": "Ativo",
-    "vencimento": "25/03/2023",
-    "bloqueia_com": "16",
-    "tempo_em_atraso": "6",
-    "valor": "109,90",
-    "data_do_bloqueio": "10/04/2023",
-    "tempoParaEntrarEmBloqueio": "9",
-    "tipoDeMensagem": "PADRÃO"
   },
   {
     "id": "10396",
@@ -16570,20 +16142,6 @@
     "data_do_bloqueio": "02/04/2023",
     "tempoParaEntrarEmBloqueio": "1",
     "tipoDeMensagem": "BLOQUEIA AMANHÃ"
-  },
-  {
-    "id": "10963",
-    "nome": "Angela",
-    "telefone": "51997389273",
-    "status": "Bloqueado",
-    "vencimento": "15/03/2023",
-    "bloqueia_com": "16",
-    "tempo_em_atraso": "16",
-    "valor": "109,90",
-    "data_do_bloqueio": "31/03/2023",
-    "conexao": "Bloqueado",
-    "tempoParaEntrarEmBloqueio": "Passou",
-    "tipoDeMensagem": "BLOQUEADO"
   },
   {
     "id": "10969",
@@ -17020,20 +16578,6 @@
     "tipoDeMensagem": "PADRÃO"
   },
   {
-    "id": "11535",
-    "nome": "Avelange",
-    "telefone": "51996388542",
-    "status": "Ativo",
-    "vencimento": "21/03/2023",
-    "bloqueia_com": "6",
-    "tempo_em_atraso": "10",
-    "valor": "167,90",
-    "data_do_bloqueio": "27/03/2023",
-    "conexao": "Bloqueado",
-    "tempoParaEntrarEmBloqueio": "Passou",
-    "tipoDeMensagem": "PADRÃO"
-  },
-  {
     "id": "11537",
     "nome": "Bruna",
     "telefone": "51980648402",
@@ -17377,7 +16921,7 @@
     "id": "12018",
     "nome": "Valderi",
     "telefone": "51980211395",
-    "status": "Bloqueado",
+    "status": "Ativo",
     "vencimento": "15/03/2023",
     "bloqueia_com": "16",
     "tempo_em_atraso": "16",
@@ -17385,7 +16929,7 @@
     "data_do_bloqueio": "31/03/2023",
     "conexao": "Bloqueado",
     "tempoParaEntrarEmBloqueio": "Passou",
-    "tipoDeMensagem": "BLOQUEADO"
+    "tipoDeMensagem": "PADRÃO"
   },
   {
     "id": "12057",
@@ -17667,7 +17211,7 @@
     "id": "12294",
     "nome": "Eduarda",
     "telefone": "51997695274",
-    "status": "Bloqueado",
+    "status": "Ativo",
     "vencimento": "15/03/2023",
     "bloqueia_com": "16",
     "tempo_em_atraso": "16",
@@ -17675,13 +17219,13 @@
     "data_do_bloqueio": "31/03/2023",
     "conexao": "Bloqueado",
     "tempoParaEntrarEmBloqueio": "Passou",
-    "tipoDeMensagem": "BLOQUEADO"
+    "tipoDeMensagem": "PADRÃO"
   },
   {
     "id": "12297",
     "nome": "Adilson",
     "telefone": "51998210986",
-    "status": "Bloqueado",
+    "status": "Ativo",
     "vencimento": "15/03/2023",
     "bloqueia_com": "16",
     "tempo_em_atraso": "16",
@@ -17689,7 +17233,7 @@
     "data_do_bloqueio": "31/03/2023",
     "conexao": "Bloqueado",
     "tempoParaEntrarEmBloqueio": "Passou",
-    "tipoDeMensagem": "BLOQUEADO"
+    "tipoDeMensagem": "PADRÃO"
   },
   {
     "id": "12310",
@@ -17956,19 +17500,6 @@
     "tipoDeMensagem": "PADRÃO"
   },
   {
-    "id": "12619",
-    "nome": "Tiago",
-    "telefone": "51997733559",
-    "status": "Ativo",
-    "vencimento": "25/03/2023",
-    "bloqueia_com": "16",
-    "tempo_em_atraso": "6",
-    "valor": "154,90",
-    "data_do_bloqueio": "10/04/2023",
-    "tempoParaEntrarEmBloqueio": "9",
-    "tipoDeMensagem": "PADRÃO"
-  },
-  {
     "id": "12662",
     "nome": "Camila",
     "telefone": "51980574645",
@@ -18190,19 +17721,6 @@
     "bloqueia_com": "16",
     "tempo_em_atraso": "11",
     "valor": "109,90",
-    "data_do_bloqueio": "05/04/2023",
-    "tempoParaEntrarEmBloqueio": "4",
-    "tipoDeMensagem": "PADRÃO"
-  },
-  {
-    "id": "12806",
-    "nome": "Claudete",
-    "telefone": "51982952371",
-    "status": "Ativo",
-    "vencimento": "20/03/2023",
-    "bloqueia_com": "16",
-    "tempo_em_atraso": "11",
-    "valor": "79,90",
     "data_do_bloqueio": "05/04/2023",
     "tempoParaEntrarEmBloqueio": "4",
     "tipoDeMensagem": "PADRÃO"
@@ -18773,20 +18291,6 @@
     "tipoDeMensagem": "PADRÃO"
   },
   {
-    "id": "13662",
-    "nome": "Eduardo",
-    "telefone": "51997980505",
-    "status": "Ativo",
-    "vencimento": "15/03/2023",
-    "bloqueia_com": "16",
-    "tempo_em_atraso": "16",
-    "valor": "119,90",
-    "data_do_bloqueio": "31/03/2023",
-    "conexao": "Bloqueado",
-    "tempoParaEntrarEmBloqueio": "Passou",
-    "tipoDeMensagem": "PADRÃO"
-  },
-  {
     "id": "13663",
     "nome": "Geovane",
     "telefone": "51999915268",
@@ -19095,7 +18599,7 @@
     "id": "14167",
     "nome": "Yara",
     "telefone": "51999129201",
-    "status": "Bloqueado",
+    "status": "Ativo",
     "vencimento": "15/03/2023",
     "bloqueia_com": "16",
     "tempo_em_atraso": "16",
@@ -19103,7 +18607,7 @@
     "data_do_bloqueio": "31/03/2023",
     "conexao": "Bloqueado",
     "tempoParaEntrarEmBloqueio": "Passou",
-    "tipoDeMensagem": "BLOQUEADO"
+    "tipoDeMensagem": "PADRÃO"
   },
   {
     "id": "14177",
@@ -19858,20 +19362,6 @@
     "tipoDeMensagem": "PADRÃO"
   },
   {
-    "id": "14865",
-    "nome": "Aquiles",
-    "telefone": "51993195753",
-    "status": "Bloqueado",
-    "vencimento": "15/03/2023",
-    "bloqueia_com": "16",
-    "tempo_em_atraso": "16",
-    "valor": "99,90",
-    "data_do_bloqueio": "31/03/2023",
-    "conexao": "Bloqueado",
-    "tempoParaEntrarEmBloqueio": "Passou",
-    "tipoDeMensagem": "BLOQUEADO"
-  },
-  {
     "id": "14870",
     "nome": "Ivoni",
     "telefone": "51995627442",
@@ -20072,20 +19562,6 @@
     "id": "15191",
     "nome": "Ana",
     "telefone": "51991758823",
-    "status": "Bloqueado",
-    "vencimento": "15/03/2023",
-    "bloqueia_com": "16",
-    "tempo_em_atraso": "16",
-    "valor": "109,90",
-    "data_do_bloqueio": "31/03/2023",
-    "conexao": "Bloqueado",
-    "tempoParaEntrarEmBloqueio": "Passou",
-    "tipoDeMensagem": "BLOQUEADO"
-  },
-  {
-    "id": "15200",
-    "nome": "Cipione",
-    "telefone": "51998302192",
     "status": "Bloqueado",
     "vencimento": "15/03/2023",
     "bloqueia_com": "16",
@@ -20501,20 +19977,6 @@
     "conexao": "Bloqueado",
     "tempoParaEntrarEmBloqueio": "Passou",
     "tipoDeMensagem": "PADRÃO"
-  },
-  {
-    "id": "15502",
-    "nome": "Nauane",
-    "telefone": "51997493306",
-    "status": "Bloqueado",
-    "vencimento": "20/03/2023",
-    "bloqueia_com": "6",
-    "tempo_em_atraso": "11",
-    "valor": "109,90",
-    "data_do_bloqueio": "26/03/2023",
-    "conexao": "Bloqueado",
-    "tempoParaEntrarEmBloqueio": "Passou",
-    "tipoDeMensagem": "BLOQUEADO"
   },
   {
     "id": "15511",
@@ -21097,19 +20559,6 @@
     "tipoDeMensagem": "PADRÃO"
   },
   {
-    "id": "16179",
-    "nome": "Mateus",
-    "telefone": "51996726520",
-    "status": "Ativo",
-    "vencimento": "20/03/2023",
-    "bloqueia_com": "16",
-    "tempo_em_atraso": "11",
-    "valor": "109,90",
-    "data_do_bloqueio": "05/04/2023",
-    "tempoParaEntrarEmBloqueio": "4",
-    "tipoDeMensagem": "PADRÃO"
-  },
-  {
     "id": "16217",
     "nome": "Sabrina",
     "telefone": "51997233383",
@@ -21290,19 +20739,6 @@
     "valor": "109,90",
     "data_do_bloqueio": "05/04/2023",
     "tempoParaEntrarEmBloqueio": "4",
-    "tipoDeMensagem": "PADRÃO"
-  },
-  {
-    "id": "16372",
-    "nome": "David",
-    "telefone": "51995140919",
-    "status": "Ativo",
-    "vencimento": "25/03/2023",
-    "bloqueia_com": "16",
-    "tempo_em_atraso": "6",
-    "valor": "114,90",
-    "data_do_bloqueio": "10/04/2023",
-    "tempoParaEntrarEmBloqueio": "9",
     "tipoDeMensagem": "PADRÃO"
   },
   {
@@ -21755,20 +21191,6 @@
     "tipoDeMensagem": "PADRÃO"
   },
   {
-    "id": "16885",
-    "nome": "Vilson",
-    "telefone": "51992804164",
-    "status": "Bloqueado",
-    "vencimento": "15/03/2023",
-    "bloqueia_com": "16",
-    "tempo_em_atraso": "16",
-    "valor": "109,90",
-    "data_do_bloqueio": "31/03/2023",
-    "conexao": "Bloqueado",
-    "tempoParaEntrarEmBloqueio": "Passou",
-    "tipoDeMensagem": "BLOQUEADO"
-  },
-  {
     "id": "16886",
     "nome": "Marcos",
     "telefone": "51995318893",
@@ -22069,20 +21491,6 @@
     "conexao": "Bloqueado",
     "tempoParaEntrarEmBloqueio": "Passou",
     "tipoDeMensagem": "PADRÃO"
-  },
-  {
-    "id": "17084",
-    "nome": "Wanderlei",
-    "telefone": "51996972879",
-    "status": "Bloqueado",
-    "vencimento": "15/03/2023",
-    "bloqueia_com": "16",
-    "tempo_em_atraso": "16",
-    "valor": "109,90",
-    "data_do_bloqueio": "31/03/2023",
-    "conexao": "Bloqueado",
-    "tempoParaEntrarEmBloqueio": "Passou",
-    "tipoDeMensagem": "BLOQUEADO"
   },
   {
     "id": "17086",
@@ -22522,20 +21930,6 @@
     "tipoDeMensagem": "PADRÃO"
   },
   {
-    "id": "17502",
-    "nome": "Volmir",
-    "telefone": "51997290265",
-    "status": "Bloqueado",
-    "vencimento": "15/03/2023",
-    "bloqueia_com": "16",
-    "tempo_em_atraso": "16",
-    "valor": "109,90",
-    "data_do_bloqueio": "31/03/2023",
-    "conexao": "Bloqueado",
-    "tempoParaEntrarEmBloqueio": "Passou",
-    "tipoDeMensagem": "BLOQUEADO"
-  },
-  {
     "id": "17510",
     "nome": "Tatiane",
     "telefone": "51999681637",
@@ -22797,20 +22191,6 @@
     "tipoDeMensagem": "PADRÃO"
   },
   {
-    "id": "17757",
-    "nome": "Andreia",
-    "telefone": "51991939404",
-    "status": "Bloqueado",
-    "vencimento": "15/03/2023",
-    "bloqueia_com": "16",
-    "tempo_em_atraso": "16",
-    "valor": "124,90",
-    "data_do_bloqueio": "31/03/2023",
-    "conexao": "Bloqueado",
-    "tempoParaEntrarEmBloqueio": "Passou",
-    "tipoDeMensagem": "BLOQUEADO"
-  },
-  {
     "id": "17762",
     "nome": "Mario",
     "telefone": "51984059144",
@@ -22833,20 +22213,6 @@
     "bloqueia_com": "16",
     "tempo_em_atraso": "16",
     "valor": "99,90",
-    "data_do_bloqueio": "31/03/2023",
-    "conexao": "Bloqueado",
-    "tempoParaEntrarEmBloqueio": "Passou",
-    "tipoDeMensagem": "BLOQUEADO"
-  },
-  {
-    "id": "17798",
-    "nome": "Marciana",
-    "telefone": "51995893188",
-    "status": "Bloqueado",
-    "vencimento": "15/03/2023",
-    "bloqueia_com": "16",
-    "tempo_em_atraso": "16",
-    "valor": "109,90",
     "data_do_bloqueio": "31/03/2023",
     "conexao": "Bloqueado",
     "tempoParaEntrarEmBloqueio": "Passou",
@@ -23300,19 +22666,6 @@
     "tipoDeMensagem": "PADRÃO"
   },
   {
-    "id": "18370",
-    "nome": "Silvania",
-    "telefone": "51996808892",
-    "status": "Ativo",
-    "vencimento": "20/03/2023",
-    "bloqueia_com": "16",
-    "tempo_em_atraso": "11",
-    "valor": "109,90",
-    "data_do_bloqueio": "05/04/2023",
-    "tempoParaEntrarEmBloqueio": "4",
-    "tipoDeMensagem": "PADRÃO"
-  },
-  {
     "id": "18371",
     "nome": "Cleiton",
     "telefone": "51997412932",
@@ -23472,19 +22825,6 @@
     "tipoDeMensagem": "PADRÃO"
   },
   {
-    "id": "18533",
-    "nome": "Alecio",
-    "telefone": "51982779351",
-    "status": "Ativo",
-    "vencimento": "20/03/2023",
-    "bloqueia_com": "16",
-    "tempo_em_atraso": "11",
-    "valor": "109,90",
-    "data_do_bloqueio": "05/04/2023",
-    "tempoParaEntrarEmBloqueio": "4",
-    "tipoDeMensagem": "PADRÃO"
-  },
-  {
     "id": "18565",
     "nome": "Braulino",
     "telefone": "51997295905",
@@ -23501,7 +22841,7 @@
     "id": "18577",
     "nome": "Guido",
     "telefone": "51991422875",
-    "status": "Bloqueado",
+    "status": "Ativo",
     "vencimento": "15/03/2023",
     "bloqueia_com": "16",
     "tempo_em_atraso": "16",
@@ -23509,7 +22849,7 @@
     "data_do_bloqueio": "31/03/2023",
     "conexao": "Bloqueado",
     "tempoParaEntrarEmBloqueio": "Passou",
-    "tipoDeMensagem": "BLOQUEADO"
+    "tipoDeMensagem": "PADRÃO"
   },
   {
     "id": "18589",
@@ -23616,19 +22956,6 @@
     "valor": "114,90",
     "data_do_bloqueio": "10/04/2023",
     "tempoParaEntrarEmBloqueio": "9",
-    "tipoDeMensagem": "PADRÃO"
-  },
-  {
-    "id": "18700",
-    "nome": "Wilson",
-    "telefone": "51980468852",
-    "status": "Ativo",
-    "vencimento": "20/03/2023",
-    "bloqueia_com": "16",
-    "tempo_em_atraso": "11",
-    "valor": "109,90",
-    "data_do_bloqueio": "05/04/2023",
-    "tempoParaEntrarEmBloqueio": "4",
     "tipoDeMensagem": "PADRÃO"
   },
   {
@@ -24410,20 +23737,6 @@
     "tipoDeMensagem": "BLOQUEADO"
   },
   {
-    "id": "19877",
-    "nome": "Ozeias",
-    "telefone": "51997727754",
-    "status": "Bloqueado",
-    "vencimento": "15/03/2023",
-    "bloqueia_com": "16",
-    "tempo_em_atraso": "16",
-    "valor": "109,90",
-    "data_do_bloqueio": "31/03/2023",
-    "conexao": "Bloqueado",
-    "tempoParaEntrarEmBloqueio": "Passou",
-    "tipoDeMensagem": "BLOQUEADO"
-  },
-  {
     "id": "19881",
     "nome": "Fabricia",
     "telefone": "51993343283",
@@ -24594,20 +23907,6 @@
     "tipoDeMensagem": "PADRÃO"
   },
   {
-    "id": "20147",
-    "nome": "Maximiliano",
-    "telefone": "51985376155",
-    "status": "Bloqueado",
-    "vencimento": "15/03/2023",
-    "bloqueia_com": "16",
-    "tempo_em_atraso": "16",
-    "valor": "129,90",
-    "data_do_bloqueio": "31/03/2023",
-    "conexao": "Bloqueado",
-    "tempoParaEntrarEmBloqueio": "Passou",
-    "tipoDeMensagem": "BLOQUEADO"
-  },
-  {
     "id": "20148",
     "nome": "Daniela",
     "telefone": "51995128266",
@@ -24677,7 +23976,7 @@
     "id": "20198",
     "nome": "Amanda",
     "telefone": "51994295915",
-    "status": "Bloqueado",
+    "status": "Ativo",
     "vencimento": "15/03/2023",
     "bloqueia_com": "16",
     "tempo_em_atraso": "16",
@@ -24685,7 +23984,7 @@
     "data_do_bloqueio": "31/03/2023",
     "conexao": "Bloqueado",
     "tempoParaEntrarEmBloqueio": "Passou",
-    "tipoDeMensagem": "BLOQUEADO"
+    "tipoDeMensagem": "PADRÃO"
   },
   {
     "id": "20223",
@@ -24776,19 +24075,6 @@
     "bloqueia_com": "16",
     "tempo_em_atraso": "11",
     "valor": "119,90",
-    "data_do_bloqueio": "05/04/2023",
-    "tempoParaEntrarEmBloqueio": "4",
-    "tipoDeMensagem": "PADRÃO"
-  },
-  {
-    "id": "20363",
-    "nome": "Gilnei",
-    "telefone": "51984940560",
-    "status": "Ativo",
-    "vencimento": "20/03/2023",
-    "bloqueia_com": "16",
-    "tempo_em_atraso": "11",
-    "valor": "109,90",
     "data_do_bloqueio": "05/04/2023",
     "tempoParaEntrarEmBloqueio": "4",
     "tipoDeMensagem": "PADRÃO"
@@ -25034,7 +24320,7 @@
     "id": "20632",
     "nome": "Lindomar",
     "telefone": "51997459007",
-    "status": "Bloqueado",
+    "status": "Ativo",
     "vencimento": "15/03/2023",
     "bloqueia_com": "16",
     "tempo_em_atraso": "16",
@@ -25042,7 +24328,7 @@
     "data_do_bloqueio": "31/03/2023",
     "conexao": "Bloqueado",
     "tempoParaEntrarEmBloqueio": "Passou",
-    "tipoDeMensagem": "BLOQUEADO"
+    "tipoDeMensagem": "PADRÃO"
   },
   {
     "id": "20638",
@@ -25416,19 +24702,6 @@
     "tipoDeMensagem": "PADRÃO"
   },
   {
-    "id": "21234",
-    "nome": "José",
-    "telefone": "51993165654",
-    "status": "Ativo",
-    "vencimento": "25/03/2023",
-    "bloqueia_com": "16",
-    "tempo_em_atraso": "6",
-    "valor": "99,90",
-    "data_do_bloqueio": "10/04/2023",
-    "tempoParaEntrarEmBloqueio": "9",
-    "tipoDeMensagem": "PADRÃO"
-  },
-  {
     "id": "21255",
     "nome": "NR",
     "telefone": "51997495056",
@@ -25520,20 +24793,6 @@
     "tipoDeMensagem": "PADRÃO"
   },
   {
-    "id": "21330",
-    "nome": "Patrick",
-    "telefone": "51996075564",
-    "status": "Bloqueado",
-    "vencimento": "25/03/2023",
-    "bloqueia_com": "6",
-    "tempo_em_atraso": "6",
-    "valor": "99,90",
-    "data_do_bloqueio": "31/03/2023",
-    "conexao": "Bloqueado",
-    "tempoParaEntrarEmBloqueio": "Passou",
-    "tipoDeMensagem": "BLOQUEADO"
-  },
-  {
     "id": "21336",
     "nome": "Landirson",
     "telefone": "51989040351",
@@ -25557,20 +24816,6 @@
     "valor": "129,90",
     "data_do_bloqueio": "10/04/2023",
     "tempoParaEntrarEmBloqueio": "9",
-    "tipoDeMensagem": "PADRÃO"
-  },
-  {
-    "id": "21341",
-    "nome": "Natália",
-    "telefone": "51994608368",
-    "status": "Ativo",
-    "vencimento": "15/03/2023",
-    "bloqueia_com": "16",
-    "tempo_em_atraso": "16",
-    "valor": "109,90",
-    "data_do_bloqueio": "31/03/2023",
-    "conexao": "Bloqueado",
-    "tempoParaEntrarEmBloqueio": "Passou",
     "tipoDeMensagem": "PADRÃO"
   },
   {
@@ -25815,7 +25060,7 @@
     "id": "21615",
     "nome": "Noe",
     "telefone": "51980117159",
-    "status": "Bloqueado",
+    "status": "Ativo",
     "vencimento": "15/03/2023",
     "bloqueia_com": "16",
     "tempo_em_atraso": "16",
@@ -25823,7 +25068,7 @@
     "data_do_bloqueio": "31/03/2023",
     "conexao": "Bloqueado",
     "tempoParaEntrarEmBloqueio": "Passou",
-    "tipoDeMensagem": "BLOQUEADO"
+    "tipoDeMensagem": "PADRÃO"
   },
   {
     "id": "21630",
@@ -27727,20 +26972,6 @@
     "tipoDeMensagem": "BLOQUEADO"
   },
   {
-    "id": "23877",
-    "nome": "Vanessa",
-    "telefone": "51991918689",
-    "status": "Bloqueado",
-    "vencimento": "15/03/2023",
-    "bloqueia_com": "16",
-    "tempo_em_atraso": "16",
-    "valor": "99,90",
-    "data_do_bloqueio": "31/03/2023",
-    "conexao": "Bloqueado",
-    "tempoParaEntrarEmBloqueio": "Passou",
-    "tipoDeMensagem": "BLOQUEADO"
-  },
-  {
     "id": "23881",
     "nome": "Vera",
     "telefone": "51999157661",
@@ -27749,19 +26980,6 @@
     "bloqueia_com": "16",
     "tempo_em_atraso": "6",
     "valor": "114,90",
-    "data_do_bloqueio": "10/04/2023",
-    "tempoParaEntrarEmBloqueio": "9",
-    "tipoDeMensagem": "PADRÃO"
-  },
-  {
-    "id": "23885",
-    "nome": "Andreza",
-    "telefone": "51998196846",
-    "status": "Ativo",
-    "vencimento": "25/03/2023",
-    "bloqueia_com": "16",
-    "tempo_em_atraso": "6",
-    "valor": "99,90",
     "data_do_bloqueio": "10/04/2023",
     "tempoParaEntrarEmBloqueio": "9",
     "tipoDeMensagem": "PADRÃO"
@@ -28949,7 +28167,7 @@
     "id": "26066",
     "nome": "Emilie",
     "telefone": "51996049180",
-    "status": "Bloqueado",
+    "status": "Ativo",
     "vencimento": "25/03/2023",
     "bloqueia_com": "6",
     "tempo_em_atraso": "6",
@@ -28957,7 +28175,7 @@
     "data_do_bloqueio": "31/03/2023",
     "conexao": "Bloqueado",
     "tempoParaEntrarEmBloqueio": "Passou",
-    "tipoDeMensagem": "BLOQUEADO"
+    "tipoDeMensagem": "PADRÃO"
   },
   {
     "id": "26077",
@@ -29085,20 +28303,6 @@
     "tipoDeMensagem": "BLOQUEADO"
   },
   {
-    "id": "26309",
-    "nome": "Israel",
-    "telefone": "51991432035",
-    "status": "Bloqueado",
-    "vencimento": "20/03/2023",
-    "bloqueia_com": "6",
-    "tempo_em_atraso": "11",
-    "valor": "119,90",
-    "data_do_bloqueio": "26/03/2023",
-    "conexao": "Bloqueado",
-    "tempoParaEntrarEmBloqueio": "Passou",
-    "tipoDeMensagem": "BLOQUEADO"
-  },
-  {
     "id": "26320",
     "nome": "Agnaldo",
     "telefone": "51999377564",
@@ -29172,7 +28376,7 @@
     "id": "26411",
     "nome": "Grasiela",
     "telefone": "51995160842",
-    "status": "Bloqueado",
+    "status": "Ativo",
     "vencimento": "25/03/2023",
     "bloqueia_com": "6",
     "tempo_em_atraso": "6",
@@ -29180,7 +28384,7 @@
     "data_do_bloqueio": "31/03/2023",
     "conexao": "Bloqueado",
     "tempoParaEntrarEmBloqueio": "Passou",
-    "tipoDeMensagem": "BLOQUEADO"
+    "tipoDeMensagem": "PADRÃO"
   },
   {
     "id": "26426",
@@ -29214,20 +28418,6 @@
     "id": "26546",
     "nome": "Bruna",
     "telefone": "51992509785",
-    "status": "Bloqueado",
-    "vencimento": "25/03/2023",
-    "bloqueia_com": "6",
-    "tempo_em_atraso": "6",
-    "valor": "119,90",
-    "data_do_bloqueio": "31/03/2023",
-    "conexao": "Bloqueado",
-    "tempoParaEntrarEmBloqueio": "Passou",
-    "tipoDeMensagem": "BLOQUEADO"
-  },
-  {
-    "id": "26585",
-    "nome": "Laquimi",
-    "telefone": "51984117289",
     "status": "Bloqueado",
     "vencimento": "25/03/2023",
     "bloqueia_com": "6",
@@ -29363,20 +28553,6 @@
     "conexao": "Bloqueado",
     "tempoParaEntrarEmBloqueio": "Passou",
     "tipoDeMensagem": "BLOQUEADO"
-  },
-  {
-    "id": "26693",
-    "nome": "Aline",
-    "telefone": "51985445397",
-    "status": "Ativo",
-    "vencimento": "25/03/2023",
-    "bloqueia_com": "6",
-    "tempo_em_atraso": "6",
-    "valor": "119,90",
-    "data_do_bloqueio": "31/03/2023",
-    "conexao": "Bloqueado",
-    "tempoParaEntrarEmBloqueio": "Passou",
-    "tipoDeMensagem": "PADRÃO"
   },
   {
     "id": "26737",
@@ -29531,20 +28707,6 @@
     "tipoDeMensagem": "PADRÃO"
   },
   {
-    "id": "26959",
-    "nome": "Bianca",
-    "telefone": "51999501203",
-    "status": "Bloqueado",
-    "vencimento": "20/03/2023",
-    "bloqueia_com": "6",
-    "tempo_em_atraso": "11",
-    "valor": "119,90",
-    "data_do_bloqueio": "26/03/2023",
-    "conexao": "Bloqueado",
-    "tempoParaEntrarEmBloqueio": "Passou",
-    "tipoDeMensagem": "BLOQUEADO"
-  },
-  {
     "id": "26977",
     "nome": "Elisandra",
     "telefone": "51999581234",
@@ -29604,7 +28766,7 @@
     "id": "27319",
     "nome": "Hiago",
     "telefone": "51998622396",
-    "status": "Bloqueado",
+    "status": "Ativo",
     "vencimento": "21/03/2023",
     "bloqueia_com": "6",
     "tempo_em_atraso": "10",
@@ -29612,7 +28774,7 @@
     "data_do_bloqueio": "27/03/2023",
     "conexao": "Bloqueado",
     "tempoParaEntrarEmBloqueio": "Passou",
-    "tipoDeMensagem": "BLOQUEADO"
+    "tipoDeMensagem": "PADRÃO"
   },
   {
     "id": "27339",
@@ -29907,20 +29069,6 @@
     "conexao": "Bloqueado",
     "tempoParaEntrarEmBloqueio": "Passou",
     "tipoDeMensagem": "PADRÃO"
-  },
-  {
-    "id": "28067",
-    "nome": "Izane",
-    "telefone": "51998664254",
-    "status": "Bloqueado",
-    "vencimento": "25/03/2023",
-    "bloqueia_com": "6",
-    "tempo_em_atraso": "6",
-    "valor": "99,90",
-    "data_do_bloqueio": "31/03/2023",
-    "conexao": "Bloqueado",
-    "tempoParaEntrarEmBloqueio": "Passou",
-    "tipoDeMensagem": "BLOQUEADO"
   },
   {
     "id": "28113",
@@ -30370,20 +29518,6 @@
     "tipoDeMensagem": "BLOQUEADO"
   },
   {
-    "id": "29019",
-    "nome": "Neide",
-    "telefone": "51996655401",
-    "status": "Bloqueado",
-    "vencimento": "21/03/2023",
-    "bloqueia_com": "6",
-    "tempo_em_atraso": "10",
-    "valor": "137,90",
-    "data_do_bloqueio": "27/03/2023",
-    "conexao": "Bloqueado",
-    "tempoParaEntrarEmBloqueio": "Passou",
-    "tipoDeMensagem": "BLOQUEADO"
-  },
-  {
     "id": "29022",
     "nome": "Aline",
     "telefone": "51980466872",
@@ -30443,7 +29577,7 @@
     "id": "29135",
     "nome": "Lucinei",
     "telefone": "55996769981",
-    "status": "Bloqueado",
+    "status": "Ativo",
     "vencimento": "21/03/2023",
     "bloqueia_com": "6",
     "tempo_em_atraso": "10",
@@ -30451,7 +29585,7 @@
     "data_do_bloqueio": "27/03/2023",
     "conexao": "Bloqueado",
     "tempoParaEntrarEmBloqueio": "Passou",
-    "tipoDeMensagem": "BLOQUEADO"
+    "tipoDeMensagem": "PADRÃO"
   },
   {
     "id": "29154",
@@ -30485,7 +29619,7 @@
     "id": "29253",
     "nome": "Leandro",
     "telefone": "51994286940",
-    "status": "Bloqueado",
+    "status": "Ativo",
     "vencimento": "21/03/2023",
     "bloqueia_com": "6",
     "tempo_em_atraso": "10",
@@ -30493,7 +29627,7 @@
     "data_do_bloqueio": "27/03/2023",
     "conexao": "Bloqueado",
     "tempoParaEntrarEmBloqueio": "Passou",
-    "tipoDeMensagem": "BLOQUEADO"
+    "tipoDeMensagem": "PADRÃO"
   },
   {
     "id": "29299",
@@ -30565,24 +29699,10 @@
     "tipoDeMensagem": "BLOQUEADO"
   },
   {
-    "id": "29570",
-    "nome": "Elizeu",
-    "telefone": "51996509670",
-    "status": "Bloqueado",
-    "vencimento": "21/03/2023",
-    "bloqueia_com": "6",
-    "tempo_em_atraso": "10",
-    "valor": "129,90",
-    "data_do_bloqueio": "27/03/2023",
-    "conexao": "Bloqueado",
-    "tempoParaEntrarEmBloqueio": "Passou",
-    "tipoDeMensagem": "BLOQUEADO"
-  },
-  {
     "id": "29583",
     "nome": "Cintia",
     "telefone": "51989773196",
-    "status": "Bloqueado",
+    "status": "Ativo",
     "vencimento": "21/03/2023",
     "bloqueia_com": "6",
     "tempo_em_atraso": "10",
@@ -30590,7 +29710,7 @@
     "data_do_bloqueio": "27/03/2023",
     "conexao": "Bloqueado",
     "tempoParaEntrarEmBloqueio": "Passou",
-    "tipoDeMensagem": "BLOQUEADO"
+    "tipoDeMensagem": "PADRÃO"
   },
   {
     "id": "29620",
@@ -31195,20 +30315,6 @@
     "tipoDeMensagem": "PADRÃO"
   },
   {
-    "id": "30747",
-    "nome": "Gustavo",
-    "telefone": "51991966868",
-    "status": "Bloqueado",
-    "vencimento": "21/03/2023",
-    "bloqueia_com": "6",
-    "tempo_em_atraso": "10",
-    "valor": "149,90",
-    "data_do_bloqueio": "27/03/2023",
-    "conexao": "Bloqueado",
-    "tempoParaEntrarEmBloqueio": "Passou",
-    "tipoDeMensagem": "BLOQUEADO"
-  },
-  {
     "id": "30759",
     "nome": "Roselaine",
     "telefone": "51996352408",
@@ -31321,19 +30427,6 @@
     "tipoDeMensagem": "BLOQUEADO"
   },
   {
-    "id": "30936",
-    "nome": "Sociedade",
-    "telefone": "51998711734",
-    "status": "Ativo",
-    "vencimento": "21/03/2023",
-    "bloqueia_com": "16",
-    "tempo_em_atraso": "10",
-    "valor": "129,90",
-    "data_do_bloqueio": "06/04/2023",
-    "tempoParaEntrarEmBloqueio": "5",
-    "tipoDeMensagem": "PADRÃO"
-  },
-  {
     "id": "30983",
     "nome": "Zelmar",
     "telefone": "51995496627",
@@ -31387,20 +30480,6 @@
     "conexao": "Bloqueado",
     "tempoParaEntrarEmBloqueio": "Passou",
     "tipoDeMensagem": "BLOQUEADO"
-  },
-  {
-    "id": "31069",
-    "nome": "Magliane",
-    "telefone": "51995261811",
-    "status": "Ativo",
-    "vencimento": "21/03/2023",
-    "bloqueia_com": "6",
-    "tempo_em_atraso": "10",
-    "valor": "99,90",
-    "data_do_bloqueio": "27/03/2023",
-    "conexao": "Bloqueado",
-    "tempoParaEntrarEmBloqueio": "Passou",
-    "tipoDeMensagem": "PADRÃO"
   },
   {
     "id": "31128",
@@ -31806,20 +30885,6 @@
     "tipoDeMensagem": "PADRÃO"
   },
   {
-    "id": "32034",
-    "nome": "Gelson",
-    "telefone": "55991473305",
-    "status": "Bloqueado",
-    "vencimento": "21/03/2023",
-    "bloqueia_com": "6",
-    "tempo_em_atraso": "10",
-    "valor": "89,90",
-    "data_do_bloqueio": "27/03/2023",
-    "conexao": "Bloqueado",
-    "tempoParaEntrarEmBloqueio": "Passou",
-    "tipoDeMensagem": "BLOQUEADO"
-  },
-  {
     "id": "32036",
     "nome": "Doris",
     "telefone": "51999727919",
@@ -32060,7 +31125,7 @@
     "id": "32518",
     "nome": "Maria",
     "telefone": "51999945525",
-    "status": "Bloqueado",
+    "status": "Ativo",
     "vencimento": "21/03/2023",
     "bloqueia_com": "6",
     "tempo_em_atraso": "10",
@@ -32068,7 +31133,7 @@
     "data_do_bloqueio": "27/03/2023",
     "conexao": "Bloqueado",
     "tempoParaEntrarEmBloqueio": "Passou",
-    "tipoDeMensagem": "BLOQUEADO"
+    "tipoDeMensagem": "PADRÃO"
   },
   {
     "id": "32637",
@@ -32322,20 +31387,6 @@
     "tipoDeMensagem": "BLOQUEADO"
   },
   {
-    "id": "33125",
-    "nome": "Alessandra",
-    "telefone": "51986597992",
-    "status": "Bloqueado",
-    "vencimento": "21/03/2023",
-    "bloqueia_com": "6",
-    "tempo_em_atraso": "10",
-    "valor": "129,90",
-    "data_do_bloqueio": "27/03/2023",
-    "conexao": "Bloqueado",
-    "tempoParaEntrarEmBloqueio": "Passou",
-    "tipoDeMensagem": "BLOQUEADO"
-  },
-  {
     "id": "33172",
     "nome": "Lar",
     "telefone": "51995823656",
@@ -32462,20 +31513,6 @@
     "tipoDeMensagem": "BLOQUEADO"
   },
   {
-    "id": "33457",
-    "nome": "Tailane",
-    "telefone": "51995904956",
-    "status": "Bloqueado",
-    "vencimento": "21/03/2023",
-    "bloqueia_com": "6",
-    "tempo_em_atraso": "10",
-    "valor": "139,90",
-    "data_do_bloqueio": "27/03/2023",
-    "conexao": "Bloqueado",
-    "tempoParaEntrarEmBloqueio": "Passou",
-    "tipoDeMensagem": "BLOQUEADO"
-  },
-  {
     "id": "33492",
     "nome": "Vanderson",
     "telefone": "51980623258",
@@ -32531,20 +31568,6 @@
     "tipoDeMensagem": "BLOQUEADO"
   },
   {
-    "id": "33642",
-    "nome": "Fatima",
-    "telefone": "53999195495",
-    "status": "Ativo",
-    "vencimento": "21/03/2023",
-    "bloqueia_com": "6",
-    "tempo_em_atraso": "10",
-    "valor": "119,90",
-    "data_do_bloqueio": "27/03/2023",
-    "conexao": "Bloqueado",
-    "tempoParaEntrarEmBloqueio": "Passou",
-    "tipoDeMensagem": "PADRÃO"
-  },
-  {
     "id": "33654",
     "nome": "Milene",
     "telefone": "51992109866",
@@ -32585,20 +31608,6 @@
     "conexao": "Bloqueado",
     "tempoParaEntrarEmBloqueio": "Passou",
     "tipoDeMensagem": "PADRÃO"
-  },
-  {
-    "id": "33697",
-    "nome": "Simone",
-    "telefone": "51996642651",
-    "status": "Bloqueado",
-    "vencimento": "21/03/2023",
-    "bloqueia_com": "6",
-    "tempo_em_atraso": "10",
-    "valor": "99,90",
-    "data_do_bloqueio": "27/03/2023",
-    "conexao": "Bloqueado",
-    "tempoParaEntrarEmBloqueio": "Passou",
-    "tipoDeMensagem": "BLOQUEADO"
   },
   {
     "id": "33701",
@@ -33147,20 +32156,6 @@
     "tipoDeMensagem": "PADRÃO"
   },
   {
-    "id": "34696",
-    "nome": "Loiva",
-    "telefone": "51996457638",
-    "status": "Bloqueado",
-    "vencimento": "21/03/2023",
-    "bloqueia_com": "6",
-    "tempo_em_atraso": "10",
-    "valor": "129,90",
-    "data_do_bloqueio": "27/03/2023",
-    "conexao": "Bloqueado",
-    "tempoParaEntrarEmBloqueio": "Passou",
-    "tipoDeMensagem": "BLOQUEADO"
-  },
-  {
     "id": "34702",
     "nome": "Ana",
     "telefone": "51995171156",
@@ -33637,20 +32632,6 @@
     "tipoDeMensagem": "BLOQUEADO"
   },
   {
-    "id": "35137",
-    "nome": "Isys",
-    "telefone": "51980409619",
-    "status": "Bloqueado",
-    "vencimento": "21/03/2023",
-    "bloqueia_com": "6",
-    "tempo_em_atraso": "10",
-    "valor": "119,90",
-    "data_do_bloqueio": "27/03/2023",
-    "conexao": "Bloqueado",
-    "tempoParaEntrarEmBloqueio": "Passou",
-    "tipoDeMensagem": "BLOQUEADO"
-  },
-  {
     "id": "35175",
     "nome": "Gabrielle",
     "telefone": "51996282309",
@@ -33691,20 +32672,6 @@
     "conexao": "Bloqueado",
     "tempoParaEntrarEmBloqueio": "Passou",
     "tipoDeMensagem": "BLOQUEADO"
-  },
-  {
-    "id": "35241",
-    "nome": "Sandra",
-    "telefone": "51990092696",
-    "status": "Ativo",
-    "vencimento": "21/03/2023",
-    "bloqueia_com": "6",
-    "tempo_em_atraso": "10",
-    "valor": "99,90",
-    "data_do_bloqueio": "27/03/2023",
-    "conexao": "Bloqueado",
-    "tempoParaEntrarEmBloqueio": "Passou",
-    "tipoDeMensagem": "PADRÃO"
   },
   {
     "id": "35261",
@@ -33892,7 +32859,7 @@
     "id": "35524",
     "nome": "Jéssica",
     "telefone": "51992502228",
-    "status": "Bloqueado",
+    "status": "Ativo",
     "vencimento": "21/03/2023",
     "bloqueia_com": "6",
     "tempo_em_atraso": "10",
@@ -33900,7 +32867,7 @@
     "data_do_bloqueio": "27/03/2023",
     "conexao": "Bloqueado",
     "tempoParaEntrarEmBloqueio": "Passou",
-    "tipoDeMensagem": "BLOQUEADO"
+    "tipoDeMensagem": "PADRÃO"
   },
   {
     "id": "35557",
@@ -34298,7 +33265,7 @@
     "id": "36179",
     "nome": "Priscila",
     "telefone": "51994243640",
-    "status": "Bloqueado",
+    "status": "Ativo",
     "vencimento": "25/03/2023",
     "bloqueia_com": "6",
     "tempo_em_atraso": "6",
@@ -34306,7 +33273,7 @@
     "data_do_bloqueio": "31/03/2023",
     "conexao": "Bloqueado",
     "tempoParaEntrarEmBloqueio": "Passou",
-    "tipoDeMensagem": "BLOQUEADO"
+    "tipoDeMensagem": "PADRÃO"
   },
   {
     "id": "36184",
@@ -34527,20 +33494,6 @@
     "bloqueia_com": "6",
     "tempo_em_atraso": "10",
     "valor": "99,90",
-    "data_do_bloqueio": "27/03/2023",
-    "conexao": "Bloqueado",
-    "tempoParaEntrarEmBloqueio": "Passou",
-    "tipoDeMensagem": "BLOQUEADO"
-  },
-  {
-    "id": "36707",
-    "nome": "Lilian",
-    "telefone": "51984442522",
-    "status": "Bloqueado",
-    "vencimento": "21/03/2023",
-    "bloqueia_com": "6",
-    "tempo_em_atraso": "10",
-    "valor": "119,90",
     "data_do_bloqueio": "27/03/2023",
     "conexao": "Bloqueado",
     "tempoParaEntrarEmBloqueio": "Passou",
@@ -35180,20 +34133,6 @@
     "id": "37549",
     "nome": "Marcus",
     "telefone": "51999118649",
-    "status": "Bloqueado",
-    "vencimento": "21/03/2023",
-    "bloqueia_com": "6",
-    "tempo_em_atraso": "10",
-    "valor": "129,90",
-    "data_do_bloqueio": "27/03/2023",
-    "conexao": "Bloqueado",
-    "tempoParaEntrarEmBloqueio": "Passou",
-    "tipoDeMensagem": "BLOQUEADO"
-  },
-  {
-    "id": "37589",
-    "nome": "Reginara",
-    "telefone": "51989125499",
     "status": "Bloqueado",
     "vencimento": "21/03/2023",
     "bloqueia_com": "6",
