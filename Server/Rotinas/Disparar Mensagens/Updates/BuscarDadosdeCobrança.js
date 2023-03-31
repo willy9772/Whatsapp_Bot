@@ -1,14 +1,31 @@
 const fs = require("fs")
 const puppeteer = require("puppeteer")
-const path = require("path")
+const path = require("path");
+const { log } = require("console");
 
-atualizarDados_abc()
+module.exports = { atualizarDadosdeCobranca }
+
+async function atualizarDadosdeCobranca(){
+	
+	const [
+		abc,
+		cdefg
+	] = await Promise.all([
+		atualizarDados_abc(),
+		atualizarDados_cdefg()
+	])
+
+	return true
+
+}
+
+
 
 async function atualizarDados_abc() {
 
 	console.log(`Buscando Dados da URL http://10.254.1.13/abc/`);
 
-	const dados = new Promise(async (res, rej) => {
+	const dados = await new Promise(async (res, rej) => {
 		try {
 
 			const page = await newPage(`http://10.254.1.13/abc/`)
@@ -57,6 +74,64 @@ async function atualizarDados_abc() {
 
 	colocarNoCache("abc.json", dados)
 
+	return true
+
+}
+
+async function atualizarDados_cdefg() {
+
+	console.log(`Buscando Dados da URL http://10.254.1.13/cdefg/`);
+
+	const dados = await new Promise(async (res, rej) => {
+		try {
+
+			const page = await newPage(`http://10.254.1.13/cdefg/`)
+
+			await page.waitForSelector("tbody")
+
+			const dados = await page.evaluate(() => {
+
+				let clientes = []
+
+				const tBody = document.querySelector("tbody")
+				const Trs = tBody.querySelectorAll("tr")
+
+				Trs.forEach((tr) => {
+
+					const Tds = tr.querySelectorAll("td")
+
+					clientes.push({
+						id: Tds[0].innerText,
+						nome: Tds[1].innerText,
+						telefone: Tds[2].innerText,
+						status: Tds[3].innerText,
+						vencimento: Tds[4].innerText,
+						bloqueia_com: Tds[5].innerText,
+						tempo_em_atraso: Tds[6].innerText
+					})
+
+				})
+
+				return clientes
+
+			})
+
+			console.log(`A busca por clientes em http://10.254.1.13/cdefg/  terminou com sucesso!`)
+
+			res(dados)
+
+		} catch (error) {
+
+			console.log(`Houve um erro ao Atualizar os dados em em http://10.254.1.13/cdefg/, o erro: ` + error)
+			rej(false)
+
+		}
+	})
+
+	colocarNoCache("cdefg.json", dados)
+
+	return true
+
 }
 
 
@@ -69,14 +144,17 @@ async function atualizarDados_abc() {
 
 function colocarNoCache(nome_do_arquivo, conteudo) {
 
-	let CacheDir = path.join(__dirname, "..", "Cache", buscarDataAtual(), nome_do_arquivo)
+	const CacheDir = path.join(__dirname, "..", "Data", "Cache", buscarDataAtual())
 
-	if (!fs.existsSync(path.join(__dirname, "..", "Cache", buscarDataAtual()))) {
-		fs.mkdirSync(path.join(__dirname, "..", "Cache", buscarDataAtual()))
+	let FileDir = path.join(CacheDir, nome_do_arquivo)
+
+	if (!fs.existsSync(CacheDir)) {
+		fs.mkdirSync(CacheDir)
 	}
 
-	
+	fs.writeFileSync(FileDir, JSON.stringify(conteudo))
 
+	log(`O cache foi atualizado com sucesso com o arquivo ${[nome_do_arquivo]}`)
 
 }
 
