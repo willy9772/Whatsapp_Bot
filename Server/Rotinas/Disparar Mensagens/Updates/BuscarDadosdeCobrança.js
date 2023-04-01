@@ -27,7 +27,7 @@ async function atualizarDados_abc() {
 
 			await page.waitForSelector("tbody")
 
-			const dados = await page.evaluate(() => {
+			const dados = await page.evaluate(async() => {
 
 				let clientes = []
 
@@ -52,10 +52,12 @@ async function atualizarDados_abc() {
 				})
 
 				return clientes
-
+				
 			})
-
+			
 			console.log(`A busca por clientes em http://10.254.1.13/abc/  terminou com sucesso!`)
+			const browser = await page.browser()
+			await browser.close()
 
 			res(dados)
 
@@ -84,7 +86,7 @@ async function atualizarDados_cdefg() {
 
 			await page.waitForSelector("tbody")
 
-			const dados = await page.evaluate(() => {
+			const dados = await page.evaluate(async() => {
 
 				let clientes = []
 
@@ -108,10 +110,12 @@ async function atualizarDados_cdefg() {
 				})
 
 				return clientes
-
+				
 			})
-
+			
 			console.log(`A busca por clientes em http://10.254.1.13/cdefg/  terminou com sucesso!`)
+			const browser = await page.browser()
+			await browser.close()
 
 			res(dados)
 
@@ -128,14 +132,6 @@ async function atualizarDados_cdefg() {
 	return true
 
 }
-
-
-
-
-
-
-
-
 
 function colocarNoCache(nome_do_arquivo, conteudo) {
 

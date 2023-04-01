@@ -1,15 +1,63 @@
+const path = require("path")
+const fs = require("fs")
 const FiltrarDados = require("./Config/FiltrarDados");
 const classificarMensagens = require("./Config/classificar_mensagens");
 const { atualizarDadosdeCobranca } = require("./Updates/BuscarDadosdeCobrança");
 
-module.exports = Disparar_Mensagens_De_Cobrança
+module.exports = Iniciar_Rotina_Cobrança
 
-Disparar_Mensagens_De_Cobrança()
+async function Iniciar_Rotina_Cobrança(sessoes_whatsapp) {
 
-async function Disparar_Mensagens_De_Cobrança(){
+    setInterval(()=>{
+        if (verificar_hora){
+
+            console.log(`\nIniciando a rotina de Cobrança Automática\n`);
+            dispararMensagens()
+            
+        } else {
+            console.log(`\nAinda não é Hora de cobrar os Clientes\n`);
+        }
+    }, 10000)
+
+}
+
+async function dispararMensagens(){
 
     await atualizarDadosdeCobranca()
     FiltrarDados()
     classificarMensagens()
+
+}
+
+function verificar_hora() {
+
+    const agora = new Date.now()
+    const hora = agora.getHours()
+
+    if ( hora != "09" ) {
+        return false
+    } else if (verificar_se_ja_foi_disparado()) {
+        return true
+    } else {
+        return false
+    }
+
+}
+
+function verificar_se_ja_foi_disparado(){
+
+    return (fs.existsSync(path.join(__dirname, "Data", "Cache", buscarDataAtual(), `logs_${buscarDataAtual()}`)))? true: false
+
+}
+
+function buscarDataAtual() {
+
+    const date = new Date()
+
+    const day = date.getDate().toString().padStart(2, 0)
+    const month = (date.getMonth() + 1).toString().padStart(2, 0)
+    const year = date.getFullYear().toString()
+
+    return `${day}-${month}-${year}`
 
 }
