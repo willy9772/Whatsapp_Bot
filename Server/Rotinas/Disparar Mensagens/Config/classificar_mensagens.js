@@ -1,6 +1,7 @@
 const { log } = require("console")
 const fs = require("fs")
 const path = require("path")
+const { buscarDataAtual } = require("../Rotina_Disparar_Mensagens")
 
 module.exports = classificarMensagens
 
@@ -34,7 +35,7 @@ function separar_mensagens_por_tipo(cacheDir, clientes) {
                 cliente.mensagem = criar_mensagem_com_variaveis(cliente, msg)
 
                 clientes_correspondentes.push(cliente)
-                
+
             }
 
         })
@@ -48,7 +49,7 @@ function separar_mensagens_por_tipo(cacheDir, clientes) {
 
 }
 
-function criar_mensagem_com_variaveis(cliente, msg){
+function criar_mensagem_com_variaveis(cliente, msg) {
 
     // Declarar Variáveis
 
@@ -62,8 +63,8 @@ function criar_mensagem_com_variaveis(cliente, msg){
     }
 
     let mensagem_predefinida = msg.mensagem
-    
-    for (const chave in variaveis){
+
+    for (const chave in variaveis) {
 
         let msg_var = `{{${chave.toUpperCase()}}}`
 
@@ -97,14 +98,13 @@ function criarPasta(diretorio, nome_da_pasta) {
 
 function criar_ou_alterar_arquivo(diretorio, nome, conteudo) {
 
-        fs.writeFileSync(path.join(diretorio, "mensagens", nome + ".json"), JSON.stringify(conteudo))
+    fs.writeFileSync(path.join(diretorio, "mensagens", nome + ".json"), JSON.stringify(conteudo))
 
 }
 
-
 function voltar_um_mes(vencimento) {
 
-    let [ dia, mes, ano ] = vencimento.split("/");
+    let [dia, mes, ano] = vencimento.split("/");
 
     const data = new Date(ano, mes - 1, dia);
 
@@ -115,11 +115,11 @@ function voltar_um_mes(vencimento) {
     const novoAno = data.getFullYear().toString();
 
     return `${novoDia}/${novoMes}/${novoAno}`;
-  }
+}
 
-function converter_dia_e_mes(str){
+function converter_dia_e_mes(str) {
 
-    const [dia, mes] = [ str.split("/")[0], str.split("/")[1] ]
+    const [dia, mes] = [str.split("/")[0], str.split("/")[1]]
 
     return `${dia}/${mes}`
 
@@ -130,23 +130,10 @@ function gerar_saudacao() {
     var data = new Date();
     var hora = data.getHours();
     if (hora >= 5 && hora < 12) {
-      return "Bom dia";
+        return "Bom dia";
     } else if (hora >= 12 && hora < 18) {
-      return "Boa tarde";
+        return "Boa tarde";
     } else {
-      return "Boa noite";
+        return "Boa noite";
     }
-  }
-  
-
-function buscarDataAtual() {
-
-    const date = new Date()
-
-    const day = date.getDate().toString().padStart(2, 0)
-    const month = (date.getMonth() + 1).toString().padStart(2, 0)
-    const year = date.getFullYear().toString()
-
-    return `${day}-${month}-${year}`
-
 }

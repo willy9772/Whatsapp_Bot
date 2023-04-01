@@ -4,7 +4,7 @@ const FiltrarDados = require("./Config/FiltrarDados");
 const classificarMensagens = require("./Config/classificar_mensagens");
 const { atualizarDadosdeCobranca } = require("./Updates/BuscarDadosdeCobrança");
 
-module.exports = Iniciar_Rotina_Cobrança
+module.exports = {Iniciar_Rotina_Cobrança, buscarDataAtual}
 
 async function Iniciar_Rotina_Cobrança(sessoes_whatsapp) {
 
@@ -12,7 +12,7 @@ async function Iniciar_Rotina_Cobrança(sessoes_whatsapp) {
         if (verificar_hora()){
 
             console.log(`\nIniciando a rotina de Cobrança Automática\n`);
-            dispararMensagens()
+            dispararMensagens(sessoes_whatsapp)
             
         } else {
             console.log(`\nAinda não é Hora de cobrar os Clientes\n`);
@@ -21,7 +21,7 @@ async function Iniciar_Rotina_Cobrança(sessoes_whatsapp) {
 
 }
 
-async function dispararMensagens(){
+async function dispararMensagens(sessoes_whatsapp){
 
     await atualizarDadosdeCobranca()
     FiltrarDados()

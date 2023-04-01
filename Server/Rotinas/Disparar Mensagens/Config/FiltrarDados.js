@@ -1,5 +1,6 @@
 const fs = require("fs")
 const path = require("path")
+const { buscarDataAtual } = require("../Rotina_Disparar_Mensagens")
 
 // Essa função Filtra os dados Recebidos da 13
 
@@ -71,19 +72,19 @@ function classificarMensagens(cliente) {
     let valorAberto = cliente.valor
 
     if (tempoParaEntrarEmBloqueio === 1) {
-        return "BLOQUEIA AMANHÃ";
+        return "BLOQUEIA_AMANHA";
     } else if (conexao === "Bloqueado" && diasEmAtraso >= 41) {
-        return "50+MENSALIDADE";
+        return "MENSALIDADE_E_50";
     } else if (conexao === "Bloqueado" && diasEmAtraso < 41 && diasEmAtraso >= 31) {
-        return "DESCONTO+MENSALIDADE";
+        return "DESCONTO_E_MENSALIDADE";
     } else if (conexao === "Bloqueado" && diasEmAtraso < 34 && diasEmAtraso >= 20 && bloqueiaCom === 6) {
         return "DESCONTO";
     } else if (conexao === "Bloqueado" && (tempoParaEntrarEmBloqueio === "Passou" || tempoParaEntrarEmBloqueio === 0)) {
         return "BLOQUEADO";
     } else if (conexao === "Ativo" && !valorAberto) {
-        return "PADRÃO2";
+        return "PADRAO2";
     } else if (conexao === "Ativo") {
-        return "PADRÃO";
+        return "PADRAO";
     } else {
         return false;
     }
@@ -103,18 +104,6 @@ function lerArquivoJson(caminho) {
     const dados = JSON.parse(fs.readFileSync(caminho))
 
     return dados
-
-}
-
-function buscarDataAtual() {
-
-    const date = new Date()
-
-    const day = date.getDate().toString().padStart(2, 0)
-    const month = (date.getMonth() + 1).toString().padStart(2, 0)
-    const year = date.getFullYear().toString()
-
-    return `${day}-${month}-${year}`
 
 }
 

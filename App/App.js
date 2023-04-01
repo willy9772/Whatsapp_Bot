@@ -1,13 +1,13 @@
-const Iniciar_Rotina_Cobrança = require("../Server/Rotinas/Disparar Mensagens/Rotina_Disparar_Mensagens");
+const { Iniciar_Rotina_Cobrança } = require("../Server/Rotinas/Disparar Mensagens/Rotina_Disparar_Mensagens");
 const carregar_sessoes_whatsapp = require("./Whatsapp/Sessões/carregar_whatsapp")
 
 
 mostrarAssinatura();
 
-(async function (){
+(async function () {
 
-/*     const sessoes_whatsapp = await carregar_sessoes_whatsapp() */
-    Iniciar_Rotina_Cobrança()
+	/*     const sessoes_whatsapp = await carregar_sessoes_whatsapp() */
+	Iniciar_Rotina_Cobrança()
 
 })()
 
