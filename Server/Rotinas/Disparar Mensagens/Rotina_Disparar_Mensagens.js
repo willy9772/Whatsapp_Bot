@@ -3,6 +3,7 @@ const fs = require("fs")
 const FiltrarDados = require("./Config/FiltrarDados");
 const classificarMensagens = require("./Config/classificar_mensagens");
 const { atualizarDadosdeCobranca } = require("./Updates/BuscarDadosdeCobrança");
+const enviarMensagens = require("./Config/Whatsapp/dispararMensagens");
 
 module.exports = {Iniciar_Rotina_Cobrança}
 
@@ -26,6 +27,7 @@ async function dispararMensagens(sessoes_whatsapp){
     await atualizarDadosdeCobranca()
     FiltrarDados()
     classificarMensagens()
+    enviarMensagens(sessoes_whatsapp)
 
 }
 
