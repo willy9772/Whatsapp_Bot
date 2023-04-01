@@ -9,7 +9,7 @@ module.exports = Iniciar_Rotina_Cobrança
 async function Iniciar_Rotina_Cobrança(sessoes_whatsapp) {
 
     setInterval(()=>{
-        if (verificar_hora){
+        if (verificar_hora()){
 
             console.log(`\nIniciando a rotina de Cobrança Automática\n`);
             dispararMensagens()
@@ -31,12 +31,12 @@ async function dispararMensagens(){
 
 function verificar_hora() {
 
-    const agora = new Date.now()
-    const hora = agora.getHours()
+    const data = new Date()
+    const hora = data.getHours()
 
-    if ( hora != "09" ) {
+    if ( hora != 5 ) {
         return false
-    } else if (verificar_se_ja_foi_disparado()) {
+    } else if (!verificar_se_ja_foi_disparado()) {
         return true
     } else {
         return false

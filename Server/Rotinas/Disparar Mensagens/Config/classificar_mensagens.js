@@ -19,7 +19,6 @@ function classificarMensagens() {
 
 }
 
-
 function separar_mensagens_por_tipo(cacheDir, clientes) {
 
     const message_types = JSON.parse(fs.readFileSync(path.join(__dirname, "TipodeMensagens", "TiposdeMensagens.json")))
@@ -39,6 +38,8 @@ function separar_mensagens_por_tipo(cacheDir, clientes) {
             }
 
         })
+
+        console.log(`São ${clientes_correspondentes.length} clientes para ser notificados com a mensagem de ${msg.tipo}`)
 
         criar_ou_alterar_arquivo(cacheDir, msg.tipo, clientes_correspondentes)
 
