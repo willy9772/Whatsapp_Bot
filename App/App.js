@@ -6,8 +6,8 @@ mostrarAssinatura();
 
 (async function () {
 
-	const sessoes_whatsapp = await carregar_sessoes_whatsapp()
-	Iniciar_Rotina_Cobrança(sessoes_whatsapp)
+/* 	const sessoes_whatsapp = await carregar_sessoes_whatsapp() */
+	Iniciar_Rotina_Cobrança(/* sessoes_whatsapp */)
 
 })()
 

@@ -23,6 +23,8 @@ function separar_mensagens_por_tipo(cacheDir, clientes) {
 
     const message_types = JSON.parse(fs.readFileSync(path.join(__dirname, "TipodeMensagens", "TiposdeMensagens.json")))
 
+    let geral = []
+
     message_types.forEach((msg) => {
 
         let clientes_correspondentes = []
@@ -32,11 +34,16 @@ function separar_mensagens_por_tipo(cacheDir, clientes) {
             if (cliente.tipoDeMensagem == msg.tipo) {
 
                 cliente.mensagem = criar_mensagem_com_variaveis(cliente, msg)
-
                 clientes_correspondentes.push(cliente)
 
             }
 
+        })
+
+        geral.push({
+            tipo: msg.tipo,
+            celulares: msg.celulares,
+            clientes: clientes_correspondentes,
         })
 
         console.log(`São ${clientes_correspondentes.length} clientes para ser notificados com a mensagem de ${msg.tipo}`)
@@ -45,6 +52,7 @@ function separar_mensagens_por_tipo(cacheDir, clientes) {
 
     })
 
+    separar_mensagens_por_celular(geral)
 
 }
 
@@ -81,9 +89,53 @@ function criar_mensagem_com_variaveis(cliente, msg) {
 
 }
 
+function separar_mensagens_por_celular(todos_os_clientes) {
+
+    /*     lerJson(__dirname, "TipodeMensagens", "celulares.json") */
+    const celulares = ["CELULAR_1", "CELULAR_2", "CELULAR_3", "CELULAR_4", "CELULAR_5", "CELULAR_6", "CELULAR_7"];
+
+    // Crie uma lista vazia para armazenar os grupos de clientes
+    let grupos_de_clientes = [];
+  
+    // Itere por todos os celulares
+    for (let i = 0; i < celulares.length; i++) {
+      const celular = celulares[i];
+      let clientes_no_celular = [];
+  
+      // Itere por todos os clientes e verifique se o celular atual está atribuído a eles
+      todos_os_clientes.forEach((objeto) => {
+        if (objeto.celulares.includes(celular)) {
+          // Adicione todos os clientes atribuídos ao celular atual na lista de clientes
+          clientes_no_celular.push(...objeto.clientes);
+        }
+      });
+  
+      // Divida a lista de clientes em grupos de até 800 pessoas
+      while (clientes_no_celular.length > 0) {
+        const grupo = clientes_no_celular.splice(0, Math.min(clientes_no_celular.length, 800));
+        grupos_de_clientes.push({ celular: celular, clientes: grupo });
+      }
+    }
+
+    fs.writeFileSync(path.join(__dirname, "..", "Data", "Cache", buscarDataAtual(), "celulares", (grupos_de_clientes.celular + ".json"), JSON.stringify(grupos_de_clientes.clientes)))
+
+}
 
 
+function verificarDiretorio(dir) {
 
+    if (!fs.existsSync(dir)) {
+        fs.mkdir(dir)
+        return false
+    } else {
+        return true
+    }
+
+}
+
+function lerJson(dir) {
+    return JSON.parse(fs.readFileSync(dir))
+}
 
 function criarPasta(diretorio, nome_da_pasta) {
 

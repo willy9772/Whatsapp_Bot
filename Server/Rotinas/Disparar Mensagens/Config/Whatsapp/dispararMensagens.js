@@ -30,7 +30,7 @@ async function disparar(instance) {
     const celular = instance.celular
     const tipos = classificar_celular(celular)
 
-    console.log(tipos);
+    
 
 }
 
@@ -44,7 +44,7 @@ function classificar_celular(celular) {
 
     tipo_de_mensagens.forEach((modelo) => {
 
-        modelo.web_instance_type.forEach((type) => {
+        modelo.celulares.forEach((type) => {
 
             if (type == celular) {
                 categorias_para_enviar.push(modelo.tipo)
