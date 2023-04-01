@@ -15,8 +15,8 @@ function FiltrarDados() {
     abc = filtrarObjeto(abc)
     cdefg = filtrarObjeto(cdefg)
 
-    gravarArquivoJson(path.join(cacheDir, "abc_filtrado.json"), abc)
-    gravarArquivoJson(path.join(cacheDir, "cdefg_filtrado.json"), cdefg)
+    gravarArquivoJson(path.join(cacheDir, "abc.json"), abc)
+    gravarArquivoJson(path.join(cacheDir, "cdefg.json"), cdefg)
 
 }
 

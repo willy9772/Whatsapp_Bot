@@ -8,8 +8,8 @@ function classificarMensagens() {
 
     const cacheDir = path.join(__dirname, "..", "Data", "Cache", buscarDataAtual())
 
-    const abc = JSON.parse(fs.readFileSync(path.join(cacheDir, "abc_filtrado.json")))
-    const cdefg = JSON.parse(fs.readFileSync(path.join(cacheDir, "cdefg_filtrado.json")))
+    const abc = JSON.parse(fs.readFileSync(path.join(cacheDir, "abc.json")))
+    const cdefg = JSON.parse(fs.readFileSync(path.join(cacheDir, "cdefg.json")))
 
     const todosOsClientes = abc.concat(cdefg)
 
@@ -70,6 +70,10 @@ function criar_mensagem_com_variaveis(cliente, msg){
             mensagem_predefinida = mensagem_predefinida.replace(new RegExp(msg_var, "g"), variaveis[chave]);
         }
 
+    }
+
+    if (mensagem_predefinida.includes("undefined") || mensagem_predefinida.includes("{{")) {
+        return false
     }
 
     return mensagem_predefinida
