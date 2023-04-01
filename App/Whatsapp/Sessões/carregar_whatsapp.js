@@ -2,8 +2,8 @@ const iniciar_whatsapp = require("./iniciar_whatsapp");
 
 carregar_whatsapp()
 
-async function carregar_whatsapp(){
-    
+    })
+
 /*     
     let [
         MENSALIDADE_E_50,
@@ -25,4 +25,10 @@ async function carregar_whatsapp(){
  */
     
 }
+
+
+
+
+
+
 
