@@ -5,12 +5,9 @@ const { log } = require("console");
 
 module.exports = { atualizarDadosdeCobranca }
 
-async function atualizarDadosdeCobranca(){
-	
-	const [
-		abc,
-		cdefg
-	] = await Promise.all([
+async function atualizarDadosdeCobranca() {
+
+	await Promise.all([
 		atualizarDados_abc(),
 		atualizarDados_cdefg()
 	])
@@ -18,8 +15,6 @@ async function atualizarDadosdeCobranca(){
 	return true
 
 }
-
-
 
 async function atualizarDados_abc() {
 
