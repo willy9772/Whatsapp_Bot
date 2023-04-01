@@ -1,6 +1,6 @@
 [
     {
-        "tipo": "   ",
+        "tipo": "PADRAO",
         "mensagem": "{{SAUDACAO}} {{NOME}}! Sua mensalidade no valor de R$ {{VALOR}} venceu no dia {{VENCIMENTO}} evite o CORTE da sua internet em {{DIA_PARA_BLOQUEAR}}, pagando agora mesmo SEM JUROS por PIX ou CARTÃO DE CRÉDITO... Clique aqui: https://giganet-rs.com.br/central_assinante_web/login insira o CPF do titular em usuário e senha sem pontuações.",
         "web_instance_type": ["CELULAR_1", "CELULAR_2", "CELULAR_3"]
     },

@@ -36,7 +36,7 @@ function verificar_hora() {
     const data = new Date()
     const hora = data.getHours()
 
-    if ( hora != 6 ) {
+    if ( hora != 7 ) {
         return false
     } else if (!verificar_se_ja_foi_disparado()) {
         return true

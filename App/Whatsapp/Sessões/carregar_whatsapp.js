@@ -6,56 +6,34 @@ async function carregar_sessoes_whatsapp() {
     
     console.log(`\nCarregando Sessões do Whatsapp\n`);
 
-    const [
-        privado_teste,
-        privado_teste_dois
-    ] = await Promise.all([
-        iniciar_whatsapp("privado_teste"),
-        iniciar_whatsapp("privado_teste_dois"),
-    ])
-
-    let sessões = []
-    
-    sessões.push({
-        cliente: privado_teste,
-        nome: "privado_teste"
-    })
-
-    sessões.push({
-        cliente: privado_teste_dois,
-        nome: "privado_teste_dois"
-    })
-
-/*     const sessões = await new Promise(async(res, rej)=>{
-        const sessoes = [
-            "privado_teste",
-            "privado_teste_dois",
-            "MENSALIDADE_E_50",
-            "BLOQUEADOS",
-            "BLOQUEIA_AMANHA",
-            "DESCONTO",
-            "DESCONTO_E_MENSALIDADE",
-            "PADRAO",
-            "PADRAO2"
+    const sessões = await new Promise(async(res, rej)=>{
+        const celulares = [
+            "CELULAR_1",
+/*             "CELULAR_2",
+            "CELULAR_3",
+            "CELULAR_4",
+            "CELULAR_5",
+            "CELULAR_6",
+            "CELULAR_7", */
         ]
     
         let clientes_iniciados = []
     
-        for (let i = 0; i < sessoes.length; i++) {
+        for (let i = 0; i < celulares.length; i++) {
             
-            const sessão = sessoes[i];
-            const cliente = await iniciar_whatsapp(sessão)
+            const celular = celulares[i];
+            const cliente = await iniciar_whatsapp(celular)
     
             clientes_iniciados.push({
                 cliente: cliente,
-                nome: sessão
+                celular: celular
             })
             
         }
     
         res(clientes_iniciados)
 
-    }) */
+    })
 
     return sessões
 
