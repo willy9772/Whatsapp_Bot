@@ -1,7 +1,6 @@
 const { log } = require("console")
 const fs = require("fs")
 const path = require("path")
-const { buscarDataAtual } = require("../Rotina_Disparar_Mensagens")
 
 module.exports = classificarMensagens
 
@@ -136,4 +135,16 @@ function gerar_saudacao() {
     } else {
         return "Boa noite";
     }
+}
+
+function buscarDataAtual() {
+
+    const date = new Date()
+
+    const day = date.getDate().toString().padStart(2, 0)
+    const month = (date.getMonth() + 1).toString().padStart(2, 0)
+    const year = date.getFullYear().toString()
+
+    return `${day}-${month}-${year}`
+
 }

@@ -4,7 +4,7 @@ const FiltrarDados = require("./Config/FiltrarDados");
 const classificarMensagens = require("./Config/classificar_mensagens");
 const { atualizarDadosdeCobranca } = require("./Updates/BuscarDadosdeCobrança");
 
-module.exports = {Iniciar_Rotina_Cobrança, buscarDataAtual}
+module.exports = {Iniciar_Rotina_Cobrança}
 
 async function Iniciar_Rotina_Cobrança(sessoes_whatsapp) {
 
@@ -34,7 +34,7 @@ function verificar_hora() {
     const data = new Date()
     const hora = data.getHours()
 
-    if ( hora != 5 ) {
+    if ( hora != 6 ) {
         return false
     } else if (!verificar_se_ja_foi_disparado()) {
         return true

@@ -1,6 +1,5 @@
 const fs = require("fs")
 const path = require("path")
-const { buscarDataAtual } = require("../Rotina_Disparar_Mensagens")
 
 // Essa função Filtra os dados Recebidos da 13
 
@@ -216,5 +215,17 @@ function converterEmDataJs(dataString) {
     var data = new Date(ano, mes, dia);
 
     return data;
+
+}
+
+function buscarDataAtual() {
+
+    const date = new Date()
+
+    const day = date.getDate().toString().padStart(2, 0)
+    const month = (date.getMonth() + 1).toString().padStart(2, 0)
+    const year = date.getFullYear().toString()
+
+    return `${day}-${month}-${year}`
 
 }
