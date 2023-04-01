@@ -91,33 +91,69 @@ function criar_mensagem_com_variaveis(cliente, msg) {
 
 function separar_mensagens_por_celular(todos_os_clientes) {
 
-    /*     lerJson(__dirname, "TipodeMensagens", "celulares.json") */
-    const celulares = ["CELULAR_1", "CELULAR_2", "CELULAR_3", "CELULAR_4", "CELULAR_5", "CELULAR_6", "CELULAR_7"];
+    log(todos_os_clientes[0])
 
-    // Crie uma lista vazia para armazenar os grupos de clientes
-    let grupos_de_clientes = [];
-  
-    // Itere por todos os celulares
-    for (let i = 0; i < celulares.length; i++) {
-      const celular = celulares[i];
-      let clientes_no_celular = [];
-  
-      // Itere por todos os clientes e verifique se o celular atual está atribuído a eles
-      todos_os_clientes.forEach((objeto) => {
-        if (objeto.celulares.includes(celular)) {
-          // Adicione todos os clientes atribuídos ao celular atual na lista de clientes
-          clientes_no_celular.push(...objeto.clientes);
+    const celulares = lerJson(path.join(__dirname, "TipodeMensagens", "celulares.json"))
+    const TipodeMensagens = lerJson(path.join(__dirname, "TipodeMensagens", "TiposdeMensagens.json"))
+
+    let clientes_inclusos = []
+    let celulares_Obj = {}
+
+    celulares.forEach((celular) => {
+
+        let grupos_de_clientes = []
+
+        celulares_Obj[celular] = {
+            n_de_contatos: 0
         }
-      });
-  
-      // Divida a lista de clientes em grupos de até 800 pessoas
-      while (clientes_no_celular.length > 0) {
-        const grupo = clientes_no_celular.splice(0, Math.min(clientes_no_celular.length, 800));
-        grupos_de_clientes.push({ celular: celular, clientes: grupo });
-      }
-    }
 
-    fs.writeFileSync(path.join(__dirname, "..", "Data", "Cache", buscarDataAtual(), "celulares", (grupos_de_clientes.celular + ".json"), JSON.stringify(grupos_de_clientes.clientes)))
+        while (celulares_Obj[celular].n_de_contatos < 800) {
+
+            TipodeMensagens.forEach((tipodemensagem) => {
+
+                todos_os_clientes.forEach((grupos) => {
+
+                    if (grupos.tipo == tipodemensagem.tipo) {
+
+                        grupos.clientes.forEach((cliente) => {
+
+                            const cliente_incluso = clientes_inclusos.filter((cli) => cli.id == cliente.id)
+
+                            if (!(celulares_Obj[celular].n_de_contatos < 800)) {
+                                return
+                            }
+
+                            if (cliente_incluso.length === 0) {
+
+                                clientes_inclusos.push(cliente)
+                                grupos_de_clientes.push(cliente)
+                                celulares_Obj[celular].n_de_contatos++
+
+                            }
+
+                        })
+
+                    }
+
+
+
+                })
+
+
+
+            })
+
+
+
+        }
+
+        fs.writeFileSync(path.join(__dirname, "Teste", celular + ".json"), JSON.stringify(grupos_de_clientes))
+        fs.writeFileSync(path.join(__dirname, "Teste", celular + "_inclusos.json"), JSON.stringify(clientes_inclusos))
+
+    })
+
+
+
 
 }
 
@@ -125,7 +161,7 @@ function separar_mensagens_por_celular(todos_os_clientes) {
 function verificarDiretorio(dir) {
 
     if (!fs.existsSync(dir)) {
-        fs.mkdir(dir)
+        fs.mkdirSync(dir)
         return false
     } else {
         return true
@@ -134,6 +170,7 @@ function verificarDiretorio(dir) {
 }
 
 function lerJson(dir) {
+    log(dir)
     return JSON.parse(fs.readFileSync(dir))
 }
 
