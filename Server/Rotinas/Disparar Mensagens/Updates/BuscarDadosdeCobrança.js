@@ -27,7 +27,7 @@ async function atualizarDados_abc() {
 
 			await page.waitForSelector("tbody")
 
-			const dados = await page.evaluate(async() => {
+			const dados = await page.evaluate(async () => {
 
 				let clientes = []
 
@@ -52,9 +52,9 @@ async function atualizarDados_abc() {
 				})
 
 				return clientes
-				
+
 			})
-			
+
 			console.log(`A busca por clientes em http://10.254.1.13/abc/  terminou com sucesso!`)
 			const browser = await page.browser()
 			await browser.close()
@@ -86,7 +86,7 @@ async function atualizarDados_cdefg() {
 
 			await page.waitForSelector("tbody")
 
-			const dados = await page.evaluate(async() => {
+			const dados = await page.evaluate(async () => {
 
 				let clientes = []
 
@@ -110,9 +110,9 @@ async function atualizarDados_cdefg() {
 				})
 
 				return clientes
-				
+
 			})
-			
+
 			console.log(`A busca por clientes em http://10.254.1.13/cdefg/  terminou com sucesso!`)
 			const browser = await page.browser()
 			await browser.close()
@@ -152,7 +152,7 @@ function colocarNoCache(nome_do_arquivo, conteudo) {
 async function newPage(url) {
 
 	// Launch the browser
-	const browser = await puppeteer.launch({ headless: true });
+	const browser = await puppeteer.launch({headless: 'new'});
 
 	// Create a page
 	const page = await browser.newPage();

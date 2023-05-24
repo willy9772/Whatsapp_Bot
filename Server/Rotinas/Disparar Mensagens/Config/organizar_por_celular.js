@@ -16,6 +16,11 @@ function organizar_por_celular() {
         const estrutura = estrutura_de_mensagens.find(est => est.tipo === tipo_de_mensagem_cliente);
         const celulares_disponiveis = estrutura.celulares;
 
+        if(!tipo_de_mensagem_cliente){
+            excluidos.push(cliente)
+            return
+        }
+
         let menor_tamanho = Infinity;
         let celular_com_menor_tamanho = null;
 
@@ -30,7 +35,7 @@ function organizar_por_celular() {
             }
         });
 
-        if (grupo_de_clientes[celular_com_menor_tamanho].length < 800 && !grupo_de_clientes[celular_com_menor_tamanho].some(c => c.id === cliente.id)) {
+        if (grupo_de_clientes[celular_com_menor_tamanho].length < 600 && !grupo_de_clientes[celular_com_menor_tamanho].some(c => c.id === cliente.id)) {
             grupo_de_clientes[celular_com_menor_tamanho].push(cliente);
         } else {
             excluidos.push(cliente)

@@ -1,6 +1,6 @@
 const { log } = require("console");
 const fs = require("fs")
-const path = require("path")
+const path = require("path");
 
 module.exports = enviarMensagens
 
@@ -21,11 +21,14 @@ async function enviarMensagens(instancias) {
     const resultados = await Promise.all(promessas);
 
     if (resultados.every((resultado) => resultado)) {
+
         log(`O envio de mensagens de cobrança em todas as instâncias foi concluído com sucesso!`);
         return true;
+
     } else {
         throw new Error("Houve um erro ao enviar as mensagens em algumas instâncias.");
     }
+
 }
 
 async function disparar(instance) {
@@ -41,7 +44,6 @@ async function disparar(instance) {
 
                 await enviar_mensagem(cliente, instance)
                 enviados.push(cliente)
-
             }
 
             salvarLogs(`${celular}-${buscarDataAtual()}`, enviados)
@@ -51,6 +53,7 @@ async function disparar(instance) {
         } catch (error) {
             log(`Houve um erro ao disparar as mensagens na instancia ${instance.celular}`)
         }
+
     })
 
     return await evento_disparar
@@ -58,29 +61,53 @@ async function disparar(instance) {
 }
 
 async function enviar_mensagem(cliente, instance) {
+
     const mensagem_enviada = new Promise((resolve, reject) => {
+
+        const { databases } = require("../../../../DataBase/Start/StartDatabases");
+        const mensagensEnviadasDb = databases.bds.mensagensEnviadasDb
+
         setTimeout(async () => {
 
             try {
                 const numero = "55" + cliente.telefone + "@c.us"
                 const mensagem = cliente.mensagem
                 const instancia = instance.cliente
-    
-                await instancia.sendMessage(numero, mensagem)
-    
+
+                const msg = await instancia.sendMessage(numero, mensagem)
+
+                await mensagensEnviadasDb.create({
+                    numero: cliente.telefone,
+                    celular: instance.celular,
+                    mensagem: mensagem,
+                    msgId: msg.id.id,
+                    data: buscarDataAtual()
+                })
+
                 const chat = await instancia.getChatById(numero)
                 await chat.archive()
-    
+
                 log(`Mensagem enviada para ${numero}, com o tipo ${cliente.tipoDeMensagem}, no ${instance.celular}`)
-    
+
                 resolve(true)
             }
-            catch (error) { 
+            catch (error) {
+
                 log(`Erro ao disparar as mensagens para o ID: ${cliente.id} o Erro:\n${error}`)
+
+                const logsDb = databases.bds.logsDb
+
+                await logsDb.create({
+                    operação: 'Enviar Mensagem',
+                    erro: JSON.stringify(error)
+                })
+
                 reject(false)
+
             }
 
-        }, 30000)
+        }, 45000)
+        
     })
 
     return await mensagem_enviada
@@ -110,5 +137,9 @@ function salvarLogs(nome, conteudo) {
 }
 
 function criar_diretorio_logs() {
-    fs.mkdirSync(path.join(__dirname, "..", "..", "Data", "Cache", buscarDataAtual(), "Logs"))
+    try {
+        fs.mkdirSync(path.join(__dirname, "..", "..", "Data", "Cache", buscarDataAtual(), "Logs"))
+    } catch (error) {
+        return false
+    }
 }

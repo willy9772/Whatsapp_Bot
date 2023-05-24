@@ -57,6 +57,8 @@ function filtrarObjeto(array_de_objetos) {
 function classificarMensagens(cliente) {
 
     let conexao = cliente.status
+    let valorAberto = cliente.valor
+    let bloqueiaCom = cliente.bloqueia_com
 
     let tempoParaEntrarEmBloqueio
 
@@ -67,18 +69,18 @@ function classificarMensagens(cliente) {
     }
 
     let diasEmAtraso = Number(cliente.tempo_em_atraso)
-    let bloqueiaCom = Number(cliente.bloqueia_com)
-    let valorAberto = cliente.valor
 
     if (tempoParaEntrarEmBloqueio === 1) {
         return "BLOQUEIA_AMANHA";
     } else if (conexao === "Bloqueado" && diasEmAtraso >= 41) {
         return "MENSALIDADE_E_50";
+    } else if (diasEmAtraso <= 3) {
+        return false
     } else if (conexao === "Bloqueado" && diasEmAtraso < 41 && diasEmAtraso >= 31) {
         return "DESCONTO_E_MENSALIDADE";
-    } else if (conexao === "Bloqueado" && diasEmAtraso < 34 && diasEmAtraso >= 20 && bloqueiaCom === 6) {
+    } else if (conexao === "Bloqueado" && diasEmAtraso < 34 && diasEmAtraso >= 21 && bloqueiaCom === 6) {
         return "DESCONTO";
-    } else if (conexao === "Bloqueado" && (tempoParaEntrarEmBloqueio === "Passou" || tempoParaEntrarEmBloqueio === 0) && diasEmAtraso > 20) {
+    } else if (conexao === "Bloqueado" && (tempoParaEntrarEmBloqueio === "Passou" || tempoParaEntrarEmBloqueio === 0) && diasEmAtraso > 21) {
         return "BLOQUEADO";
     } else if (conexao === "Ativo" && !valorAberto) {
         return "PADRAO2";

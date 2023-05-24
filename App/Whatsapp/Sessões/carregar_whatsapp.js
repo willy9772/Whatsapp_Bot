@@ -1,4 +1,3 @@
-const { log } = require("handlebars");
 const iniciar_whatsapp = require("./iniciar_whatsapp");
 
 module.exports = carregar_sessoes_whatsapp

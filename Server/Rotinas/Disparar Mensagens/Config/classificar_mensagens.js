@@ -1,10 +1,11 @@
-const { log } = require("console")
 const fs = require("fs")
+const moment = require("moment/moment")
 const path = require("path")
+const { Op } = require("sequelize")
 
 module.exports = classificarMensagens
 
-function classificarMensagens() {
+async function classificarMensagens() {
 
     const cacheDir = path.join(__dirname, "..", "Data", "Cache", buscarDataAtual())
 
@@ -13,38 +14,66 @@ function classificarMensagens() {
 
     const todosOsClientes = abc.concat(cdefg)
 
-    separar_mensagens_por_tipo(cacheDir, todosOsClientes)
+    await separar_mensagens_por_tipo(cacheDir, todosOsClientes)
 
 }
 
-function separar_mensagens_por_tipo(cacheDir, clientes) {
-
+async function separar_mensagens_por_tipo(cacheDir, clientes) {
     const message_types = JSON.parse(fs.readFileSync(path.join(__dirname, "TipodeMensagens", "TiposdeMensagens.json")))
-
     let geral = []
+    const clientesNotificadosRecentemente = await ClientesNotificadosRecentemente()
 
-    message_types.forEach((msg) => {
-
+    for (const msg of message_types) {
         let correspondentes = 0
+        let notificadosRecentes = 0
 
-        clientes.forEach((cliente) => {
+        for (const cliente of clientes) {
+            if (cliente.tipoDeMensagem === msg.tipo) {
 
-            if (cliente.tipoDeMensagem == msg.tipo) {
+                const FoiNotificadoRecentemente = clientesNotificadosRecentemente.filter((c) => c.numero === cliente.telefone)
+                if (FoiNotificadoRecentemente.length !== 0) { notificadosRecentes++; continue }
 
                 cliente.mensagem = criar_mensagem_com_variaveis(cliente, msg)
                 geral.push(cliente)
                 correspondentes++
-
             }
+        }
 
-        })
+        console.log(`São ${correspondentes} clientes para ser notificados com a mensagem de ${msg.tipo} e ${notificadosRecentes} notificados Recentemente`)
 
-        console.log(`São ${correspondentes} clientes para ser notificados com a mensagem de ${msg.tipo}`)
-
-    })
+    }
 
     criar_ou_alterar_arquivo(cacheDir, "GERAL", geral)
-    
+}
+
+async function ClientesNotificadosRecentemente() {
+
+    const { databases } = require("../../../DataBase/Start/StartDatabases")
+    const enviadosDb = databases.bds.mensagensEnviadasDb
+
+    try {
+
+        const dataInicial = moment().subtract(3, 'days').startOf('day').toDate();
+        const dataFinal = moment().endOf('day').toDate();
+
+        // Realize a busca no banco de dados
+        const result = await enviadosDb.findAll({
+            where: {
+                createdAt: {
+                    [Op.gte]: dataInicial,
+                    [Op.lte]: dataFinal
+                }
+            }
+        }).catch(erro => {
+            console.error(erro);
+        });
+
+        return result
+
+    } catch (error) {
+        console.log(`Erro ao buscar clientes notificados recentemente ${error}`);
+    }
+
 }
 
 function criar_mensagem_com_variaveis(cliente, msg) {
@@ -72,7 +101,7 @@ function criar_mensagem_com_variaveis(cliente, msg) {
 
     }
 
-    if (mensagem_predefinida.includes("undefined") || mensagem_predefinida.includes("{{")) {
+    if (mensagem_predefinida.includes("undefined") || mensagem_predefinida.includes("{{") || mensagem_predefinida.includes('false')) {
         return false
     }
 
