@@ -78,7 +78,7 @@ function classificarMensagens(cliente) {
         return "DESCONTO_E_MENSALIDADE";
     } else if (conexao === "Bloqueado" && diasEmAtraso < 34 && diasEmAtraso >= 20 && bloqueiaCom === 6) {
         return "DESCONTO";
-    } else if (conexao === "Bloqueado" && (tempoParaEntrarEmBloqueio === "Passou" || tempoParaEntrarEmBloqueio === 0)) {
+    } else if (conexao === "Bloqueado" && (tempoParaEntrarEmBloqueio === "Passou" || tempoParaEntrarEmBloqueio === 0) && diasEmAtraso > 20) {
         return "BLOQUEADO";
     } else if (conexao === "Ativo" && !valorAberto) {
         return "PADRAO2";
@@ -120,7 +120,13 @@ function mudarNumero(numero) {
     let telefoneSemCaracteres = telefone.replace(/\D/g, ''); // remove tudo que não é dígito
     let telefoneFormatoNovo = telefoneSemCaracteres.substring(0, 11);
 
-    return telefoneFormatoNovo
+    let text = telefoneFormatoNovo;
+    let parte2 = text.substring(3, 11);
+    let parte1 = text.substring(0, 2)
+
+    let final = parte1 + parte2
+
+    return final
 
 }
 
@@ -156,7 +162,7 @@ function calcularDatadoBloqueio(vencimento, dias_para_bloquear) {
 
 function mudarValor(valor) {
 
-    if (!valor){return false}
+    if (!valor) { return false }
 
     const novoValor = valor.replace(".", ",")
 

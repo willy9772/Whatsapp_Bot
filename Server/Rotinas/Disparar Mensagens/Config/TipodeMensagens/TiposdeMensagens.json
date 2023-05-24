@@ -1,37 +1,55 @@
 [
     {
-        "tipo": "PADRAO",
-        "mensagem": "{{SAUDACAO}} {{NOME}}! Sua mensalidade no valor de R$ {{VALOR}} venceu no dia {{VENCIMENTO}} evite o CORTE da sua internet em {{DIA_PARA_BLOQUEAR}}, pagando agora mesmo SEM JUROS por PIX ou CARTÃO DE CRÉDITO... Clique aqui: https://giganet-rs.com.br/central_assinante_web/login insira o CPF do titular em usuário e senha sem pontuações.",
-        "celulares": ["CELULAR_1", "CELULAR_2", "CELULAR_3"]
-    },
-    {
-        "tipo": "PADRAO2",
-        "mensagem": "{{SAUDACAO}} {{NOME}}! Sua mensalidade venceu no dia {{VENCIMENTO}}, evite o corte da sua internet pagando agora mesmo SEM JUROS por PIX ou CARTÃO DE CRÉDITO... Clique aqui: https://giganet-rs.com.br/central_assinante_web/login insira o CPF do titular em usuário e senha sem pontuações.",
-        "celulares": ["CELULAR_1", "CELULAR_2", "CELULAR_3"]
-    },
-    {
         "tipo": "BLOQUEIA_AMANHA",
-        "mensagem": "ATENÇÃO {{NOME}}! Evite o BLOQUEIO DA SUA INTERNET AMANHÃ Clique aqui: https://giganet-rs.com.br/central_assinante_web/login insira o CPF do titular em usuário e senha, e PAGUE AGORA SEM JUROS sua mensalidade vencida no dia {{VENCIMENTO}} no valor de R$ {{VALOR}} por PIX ou CARTÃO DE CRÉDITO.",
-        "celulares": ["CELULAR_4", "CELULAR_5"]
+        "mensagem": "ATENÇÃO {{NOME}}! Evite o BLOQUEIO DA SUA INTERNET AMANHÃ\nAcesse nosso site, insira o CPF do titular em usuário e senha, e PAGUE AGORA SEM JUROS sua mensalidade vencida no dia {{VENCIMENTO}} no valor de R${{VALOR}} por PIX ou CARTÃO DE CRÉDITO.",
+        "celulares": [
+            "CELULAR_1"
+        ]
     },
     {
         "tipo": "BLOQUEADO",
-        "mensagem": "ATENÇÃO {{NOME}}! Sua internet está BLOQUEADA Clique aqui: https://giganet-rs.com.br/central_assinante_web/login insira o CPF do titular em usuário e senha, e PAGUE AGORA MESMO SEM JUROS sua mensalidade vencida no dia {{VENCIMENTO}} no valor de R$ {{VALOR}} por PIX ou CARTÃO DE CRÉDITO.",
-        "celulares": ["CELULAR_4", "CELULAR_5"]
+        "mensagem": "ATENÇÃO {{NOME}}! Sua internet está BLOQUEADA!\nAcesse nosso site e insira o CPF do titular em usuário e senha, e PAGUE AGORA MESMO SEM JUROS sua mensalidade vencida no dia {{VENCIMENTO}} no valor de R${{VALOR}} por PIX ou CARTÃO DE CRÉDITO.",
+        "celulares": [
+            "CELULAR_1"
+        ]
+    },
+    {
+        "tipo": "PADRAO",
+        "mensagem": "{{SAUDACAO}} {{NOME}}! Sua mensalidade no valor de R${{VALOR}} venceu no dia {{VENCIMENTO}} evite o CORTE da sua internet em {{DIA_PARA_BLOQUEAR}}, pagando agora mesmo SEM JUROS por PIX ou CARTÃO DE CRÉDITO!",
+        "celulares": [
+            "CELULAR_2",
+            "CELULAR_3",
+            "CELULAR_4"
+        ]
+    },
+    {
+        "tipo": "PADRAO2",
+        "mensagem": "{{SAUDACAO}} {{NOME}}! Sua mensalidade venceu no dia {{VENCIMENTO}}, evite o corte da sua internet pagando agora mesmo SEM JUROS por PIX ou CARTÃO DE CRÉDITO!",
+        "celulares": [
+            "CELULAR_2",
+            "CELULAR_3",
+            "CELULAR_4"
+        ]
     },
     {
         "tipo": "DESCONTO",
-        "mensagem": "{{SAUDACAO}} {{NOME}}, tudo bem?\nLibere HOJE MESMO sua conexão pagando com 50% DE DESCONTO a mensalidade de ${{VENCIMENTO}}!\n👉  Como acessar a central: https://youtu.be/wQnFT-N_CPA\n👉 Site para realizar o pagamento: https://giganet.portal.7az.com.br/login\n👉 Como acessar a central: https://youtu.be/wQnFT-N_CPA\n👉 Site para realizar o pagamento: https://giganet.portal.7az.com.br/login",
-        "celulares": ["CELULAR_6", "CELULAR_7"]
+        "mensagem": "{{SAUDACAO}} {{NOME}}, tudo bem?\nLibere HOJE MESMO sua conexão pagando com 50% DE DESCONTO a mensalidade de {{VENCIMENTO}}!\nResponda essa mensagem e saiba como!",
+        "celulares": [
+            "CELULAR_5"
+        ]
     },
     {
         "tipo": "MENSALIDADE_E_50",
-        "mensagem": "{{SAUDACAO}} {{NOME}}, tudo bem?\nOFERTA IMPERDÍVEL!!! LIBERE HOJE MESMO sua conexão pagando R$50,00 por todas as mensalidades vencidas, e pague o valor integral da mensalidade de {{VENCIMENTO}}\nentre em contato pelo Whatsapp agora mesmo!",
-        "celulares": ["CELULAR_6", "CELULAR_7"]
+        "mensagem": "{{SAUDACAO}} {{NOME}}, tudo bem?\nOFERTA IMPERDÍVEL!!! LIBERE HOJE MESMO sua conexão pagando R$50,00 por todas as mensalidades vencidas, e pague o valor integral da mensalidade de {{VENCIMENTO}}\nresponda essa mensagem e saiba como!",
+        "celulares": [
+            "CELULAR_5"
+        ]
     },
     {
         "tipo": "DESCONTO_E_MENSALIDADE",
-        "mensagem": "{{SAUDACAO}} {{NOME}}, tudo bem?\nNÃO FIQUE DE FORA DESSA!!! Libere HOJE MESMO sua conexão pagando com 50% DE DESCONTO  a mensalidade de {{VENCIMENTO-1MES}}!, e pague o valor integral da mensalidade de {{VENCIMENTO}}\nentre em contato pelo Whatssap agora mesmo!!!",
-        "celulares": ["CELULAR_6", "CELULAR_7"]
+        "mensagem": "{{SAUDACAO}} {{NOME}}, tudo bem?\nNÃO FIQUE DE FORA DESSA!!! Libere HOJE MESMO sua conexão pagando com 50% DE DESCONTO  a mensalidade de {{VENCIMENTO-1MES}}!, e pague o valor integral da mensalidade de {{VENCIMENTO}}\nresponda essa mensagem e saiba como!!",
+        "celulares": [
+            "CELULAR_5"
+        ]
     }
 ]

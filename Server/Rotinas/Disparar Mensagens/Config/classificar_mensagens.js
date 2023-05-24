@@ -13,8 +13,6 @@ function classificarMensagens() {
 
     const todosOsClientes = abc.concat(cdefg)
 
-    criarPasta(cacheDir, "mensagens")
-
     separar_mensagens_por_tipo(cacheDir, todosOsClientes)
 
 }
@@ -27,33 +25,26 @@ function separar_mensagens_por_tipo(cacheDir, clientes) {
 
     message_types.forEach((msg) => {
 
-        let clientes_correspondentes = []
+        let correspondentes = 0
 
         clientes.forEach((cliente) => {
 
             if (cliente.tipoDeMensagem == msg.tipo) {
 
                 cliente.mensagem = criar_mensagem_com_variaveis(cliente, msg)
-                clientes_correspondentes.push(cliente)
+                geral.push(cliente)
+                correspondentes++
 
             }
 
         })
 
-        geral.push({
-            tipo: msg.tipo,
-            celulares: msg.celulares,
-            clientes: clientes_correspondentes,
-        })
-
-        console.log(`São ${clientes_correspondentes.length} clientes para ser notificados com a mensagem de ${msg.tipo}`)
-
-        criar_ou_alterar_arquivo(cacheDir, msg.tipo, clientes_correspondentes)
+        console.log(`São ${correspondentes} clientes para ser notificados com a mensagem de ${msg.tipo}`)
 
     })
 
-    separar_mensagens_por_celular(geral)
-
+    criar_ou_alterar_arquivo(cacheDir, "GERAL", geral)
+    
 }
 
 function criar_mensagem_com_variaveis(cliente, msg) {
@@ -89,104 +80,9 @@ function criar_mensagem_com_variaveis(cliente, msg) {
 
 }
 
-function separar_mensagens_por_celular(todos_os_clientes) {
-
-    log(todos_os_clientes[0])
-
-    const celulares = lerJson(path.join(__dirname, "TipodeMensagens", "celulares.json"))
-    const TipodeMensagens = lerJson(path.join(__dirname, "TipodeMensagens", "TiposdeMensagens.json"))
-
-    let clientes_inclusos = []
-    let celulares_Obj = {}
-
-    celulares.forEach((celular) => {
-
-        let grupos_de_clientes = []
-
-        celulares_Obj[celular] = {
-            n_de_contatos: 0
-        }
-
-        while (celulares_Obj[celular].n_de_contatos < 800) {
-
-            TipodeMensagens.forEach((tipodemensagem) => {
-
-                todos_os_clientes.forEach((grupos) => {
-
-                    if (grupos.tipo == tipodemensagem.tipo) {
-
-                        grupos.clientes.forEach((cliente) => {
-
-                            const cliente_incluso = clientes_inclusos.filter((cli) => cli.id == cliente.id)
-
-                            if (!(celulares_Obj[celular].n_de_contatos < 800)) {
-                                return
-                            }
-
-                            if (cliente_incluso.length === 0) {
-
-                                clientes_inclusos.push(cliente)
-                                grupos_de_clientes.push(cliente)
-                                celulares_Obj[celular].n_de_contatos++
-
-                            }
-
-                        })
-
-                    }
-
-
-
-                })
-
-
-
-            })
-
-
-
-        }
-
-        fs.writeFileSync(path.join(__dirname, "Teste", celular + ".json"), JSON.stringify(grupos_de_clientes))
-        fs.writeFileSync(path.join(__dirname, "Teste", celular + "_inclusos.json"), JSON.stringify(clientes_inclusos))
-
-    })
-
-
-
-
-}
-
-
-function verificarDiretorio(dir) {
-
-    if (!fs.existsSync(dir)) {
-        fs.mkdirSync(dir)
-        return false
-    } else {
-        return true
-    }
-
-}
-
-function lerJson(dir) {
-    log(dir)
-    return JSON.parse(fs.readFileSync(dir))
-}
-
-function criarPasta(diretorio, nome_da_pasta) {
-
-    if (!fs.existsSync(path.join(diretorio, nome_da_pasta))) {
-        fs.mkdirSync(path.join(diretorio, nome_da_pasta))
-    } else {
-        return
-    }
-
-}
-
 function criar_ou_alterar_arquivo(diretorio, nome, conteudo) {
 
-    fs.writeFileSync(path.join(diretorio, "mensagens", nome + ".json"), JSON.stringify(conteudo))
+    fs.writeFileSync(path.join(diretorio, nome + ".json"), JSON.stringify(conteudo))
 
 }
 
